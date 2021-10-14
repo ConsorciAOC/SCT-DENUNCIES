@@ -819,87 +819,86 @@ Invertint-lo:
 
 Així,elnúmerod&#39;expedientcomplertserà08/5168515-0.
 
-## Líniadecobramenticodidebarresd&#39;unabutlletadesanció
+## Línia de cobrament i codi de barres d&#39;una butlleta de sanció
 
-Acontinuacióesdetallacomgenerarlalíniadecobramenticodidebarresquecalincorporaralesbutlletes.
+A continuació es detalla com generar la línia de cobrament i codi de barres que cal incorporar a les
+butlletes.
 
-![Shape45](RackMultipart20211007-4-lhpxvq_html_63e8589e19f67bfc.gif)
+![image](https://user-images.githubusercontent.com/32306731/137284289-9ea74e0c-27bb-445b-8600-7d695a6b3939.png)
 
-### Líniadecobrament
+### Línia de cobrament
 
-Percomposarlalíniadecobrament:
+Per composar la línia de cobrament:
 
-![](RackMultipart20211007-4-lhpxvq_html_d916cd932b4ffe30.jpg)
+![image](https://user-images.githubusercontent.com/32306731/137283999-406e86ce-78f5-4bc3-a06e-01e0011231ec.png)
 
-- RINF5Emissora:valorfix05850043.
+- RIN F5 Emissora: valor fix 05850043.
 
-- Sufix(XXX):enfunciódelServeiTerritorial.
+- Sufix (XXX): en funció del Servei Territorial.
+
+![image](https://user-images.githubusercontent.com/32306731/137283786-f7248b53-a16d-4a76-9494-3847164f2a98.png)
 
 | _ServeiTerritorial_ |
 | --- |
 | _Barcelona(91)_ | _Girona(92)_ | _Lleida(93)_ | _Tarragona(94)_ |
 | 608 | 617 | 625 | 643 |
 
-- Referència(SSSSYYYYYYY-CC/SSSYYYYYYYY-CC)constadetresparts:
+- Referència (SSSSYYYYYYY-CC / SSSYYYYYYYY-CC) consta de tres parts:
 
-  - ServeiTerritorial(SSSS, 4posicions i3posicions per expedients de8dígits):
+  - Servei Territorial (SSSS, 4 posicions i 3 posicions per expedients de 8 dígits):
     - Barcelona
-      - 0008:perexpedients demenysde8posicions
-      - 008:perexpedients de8posicions
+      - 0008: per expedients de menys de 8 posicions
+      - 008: per expedients de 8 posicions
     - Girona
-      - 0017:perexpedients demenysde8posicions
-      - 017:perexpedients de8posicions
+      - 0017: per expedients de menys de 8posicions
+      - 017: per expedients de 8 posicions
     - Lleida
-      - 0025:perexpedients de menysde8 posicions
-      - 025:perexpedients de8posicions
+      - 0025: per expedients de menys de 8 posicions
+      - 025: per expedients de 8 posicions
     - Tarragona
-      - 0043:perexpedients demenysde8posicions
-      - 043:perexpedients de8posicions
+      - 0043: per expedients de menys de 8 posicions
+      - 043: per expedients de 8 posicions
 
-  - Númerod&#39;expedient(YYYYYYYoYYYYYYYY-8posicions)
+  - Número d’expedient (YYYYYYY o YYYYYYYY- 8 posicions)
 
-  - Dígitsdecontrol(CC,2posicions)calculatssegonsl&#39;algoritmeinclòsal&#39;Annex2delQuadern
+  - Dígits de control (CC, 2 posicions) calculats segons l’algoritme inclòs a l’Annex 2 del Quadern 57 &quot;_Cobros por __ventanilla__ y__autoservicio_&quot;.
 
-57&quot;_Cobros por __ventanilla__ y__autoservicio_&quot;.
+Depenent de si l’expedient es 8 o menys posicions el format de la referència es:
 
-Depenentdesil&#39;expedientes8omenysposicionselformatdelareferènciaes:
+**‘00’ (2 posicions)** + SERVEI_TERRITORIAL (2 posicions) + **NUM_EXPEDIENT (7 posicions)** + DC (2 posicions)
 
-&#39; **00&#39;**** (2****posicions)**+SERVEI\_TERRITORIAL(2posicions)+ **NUM\_EXPEDIENT**** (7****posicions)** + DC(2posicions)
+**‘0’ (1 posició)** + SERVEI_TERRITORIAL (2 posicions) + **NUM_EXPEDIENT (8 posicions)** + DC (2 posicions)
 
-&#39;**0&#39; (1****posició)**+SERVEI\_TERRITORIAL(2 posicions)+**NUM\_EXPEDIENT****(8****posicions)**+
+- Data límit (DDMMAAAA): termini de 20 dies des de la data de la denúncia.
 
-DC(2posicions)
+- Import amb descompte: S.C.
 
-- Datalímit(DDMMAAAA):terminide20diesdes de ladatadeladenúncia.
+### Codi de barres
 
-- Importambdescompte:S.C.
+Pel que fa a la composició del codi de barres de 46 dígits tenim:
 
-### Codide barres
+- Codi inicial fix (5 posicions): 90507.
 
-Pelquefaalacomposició delcodide barresde46 dígitstenim:
+- Codi d’emissora fix pel SCT (8 posicions): 05850043.
 
-- Codiinicialfix(5posicions): 90507.
+- Sufix (3 posicions) en base al Servei Territorial, vegeu apartat anterior.
 
-- Codid&#39;emissorafixpelSCT(8posicions): 05850043.
+- Servei Territorial (3/4 posicions), vegeu apartat anterior.
 
-- Sufix(3posicions)enbasealServeiTerritorial,vegeuapartatanterior.
+- Número d’expedient (7/8 posicions).
 
-- ServeiTerritorial(3/4 posicions),vegeuapartatanterior.
+- Dígits de control (2 posicions) calculats segons l’algoritme inclòs a l’Annex 2 del Quadern 57 &quot;_Cobros __por ventanilla__ y__autoservicio_&quot;.
 
-- Númerod&#39;expedient(7/8posicions).
+- Identificació (6 posicions): correspon a la data límit (DDMMAA), vegeu apartat anterior.
 
-- Dígitsdecontrol(2posicions)calculatssegonsl&#39;algoritmeinclòsal&#39;Annex2delQuadern57&quot;_Cobros __por ventanilla__ y__autoservicio_&quot;.
+- Import (10 posicions): les 2 darreres posicions corresponen als decimals.
 
-- Identificació(6 posicions):corresponaladatalímit(DDMMAA),vegeuapartatanterior.
+- Dígit final fix (1 posició): 0.
 
-- Import(10posicions):les2darreresposicionscorresponenalsdecimals.
+![image](https://user-images.githubusercontent.com/32306731/137281698-9dfc2044-94f7-487f-a7d6-9a4e0707feb3.png) A l’Annex 1 del Quadern 38 (“Códigos de Barras en Documentos Financieros”) podeu consultar la informació referent a la representació del codi de barres EAN-128 que inclou el
+format i com es genera el caràcter de control que s’ha d’incloure.
 
-- ![Shape46](RackMultipart20211007-4-lhpxvq_html_581d8521ea69d4a2.gif)Dígitfinalfix(1posició):0.
-
-| ![](RackMultipart20211007-4-lhpxvq_html_2510d52f0494e7cf.png) | A l&#39;Annex 1 del Quadern 38 (_&quot;Códigos de Barras en Documentos Financieros&quot;_) podeuconsultar la informació referent a la representació del codi de barres EAN-128 que inclou elformat icomesgeneraelcaràcterdecontrolques&#39;ha d&#39;incloure. |
-| --- | --- |
-
-![Shape47](RackMultipart20211007-4-lhpxvq_html_f556900526b51d9b.gif)
+![image](https://user-images.githubusercontent.com/32306731/137281455-fb7a0d64-621e-4337-a136-46323d877708.png)
 
 ![image](https://user-images.githubusercontent.com/32306731/137281095-b86e4677-b97f-465f-8eec-cb3bb8f26b4d.png)
 
