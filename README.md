@@ -9,17 +9,17 @@ Documentació d'integració del servei SCT-PDA del Consorci AOC.
 1. [Introducció](#1)
 2. [Transmissions de dades disponibles](#2)
 3. [Missatgeria dels serveis](#3)
-   1. [Sol·licitud de publicació](#3.1)
-      1. [Petició–dades genèriques](#3.1.1)
-      2. [Remesa](#3.1.2)
-      3. [Resposta específica](#3.1.3)
-   2. [Obtenció de rang de butlletes (SCT\_BUTLLETES)](#3.2)
-      1. [Petició – dades específiques](#3.2.1)
-      2. [Resposta – dades específiques](#3.2.2)
-   3. [Descàrrega del catàleg de normatives (SCT\_CATALEG)](#3.3)
-      1. [Petició – dades específiques](#3.3.1)
-      2. [Resposta – dades específiques](#3.3.2)
-   4. [Annexes](#3.1)
+   1. [3.1 Enviament de remesa de butlletes (SCT_REMESA)](#3.1)
+      1. [3.1.1 Petició–dades genèriques](#3.1.1)
+      2. [3.1.2 Remesa](#3.1.2)
+      3. [3.1.3 Resposta específica](#3.1.3)
+   2. [3.2 Obtenció de rang de butlletes (SCT\_BUTLLETES)](#3.2)
+      1. [3.2.1 Petició – dades específiques](#3.2.1)
+      2. [3.2.2 Resposta – dades específiques](#3.2.2)
+   3. [3.3 Descàrrega del catàleg de normatives (SCT\_CATALEG)](#3.3)
+      1. [3.3.1 Petició – dades específiques](#3.3.1)
+      2. [3.3.2 Resposta – dades específiques](#3.3.2)
+   4. [Annexes]
       1. Càlcul del dígit de control d'un número d'expedient
       2. Línia de cobrament i codidebarresd&#39;unabutlletadesanció
       3. Línia de cobrament
@@ -37,28 +37,33 @@ Per a poder realitzar la integració cal conèixer prèviament la següent docum
 - Document de Missatgeria Genèrica de la PCI del Consorci AOC.
 
 
-# 2 Transmissions de dades disponibles
+# 2 Transmissions de dades disponibles <a name="2"></a>
 
 Les dades disponibles a través del servei són les que es presenten a continuació:
 
 | **EMISSOR** |
 | --- |
 | ServeiCatalàdeTrànsit |
-| **PRODUCTE** | **MODALITAT** | **DESCRIPCIO** |
-| **SCT\_DENUNCIES** | SCT\_REMESA | Enviament de remesa de butlletes(frontal **asíncron** de la PCI). |
-| SCT\_BUTLLETES | Obtenció de rang de butlletes(frontal **síncron** de la PCI). |
-| SCT\_CATALEG | Descàrregadel catàleg de normatives (frontal **síncron** de la PCI). |
 
 
-# 3 Missatgeria del sserveis
+| **PRODUCTE** | **MODALITAT** | **DESCRIPCIO** | 
+| --- | --- | --- |
+| SCT\_DENUNCIES | SCT\_REMESA | Enviament de remesa de butlletes(frontal **asíncron** de la PCI). |
+| SCT\_DENUNCIES | SCT\_BUTLLETES | Obtenció de rang de butlletes(frontal **síncron** de la PCI). |
+| SCT\_DENUNCIES | SCT\_CATALEG | Descàrregadel catàleg de normatives (frontal **síncron** de la PCI). |
 
-  
-## 3.1 Enviament de remesade butlletes(SCT\_REMESA)
+
+
+
+# 3 Missatgeria dels serveis <a name="3"></a>
+
+
+## 3.1 Enviament de remesade butlletes(SCT\_REMESA) <a name="3.1"></a>
 
 Enviament de les denúncies al sistema del SCT previa la seva incorporació al&#39;aplicació del Procediment Sancionador del SCT (PSN).
 
     
-### 3.1.1 Petició–dades genèriques
+### 3.1.1 Petició–dades genèriques <a name="3.1.1"></a>
 
 El fitxer corresponent a la remesas&#39;hadereferenciaralblocdedades//Ficheros/Fichero de les dades genèriques de la sol·licitud.
 
@@ -67,14 +72,14 @@ El fitxer corresponent a la remesas&#39;hadereferenciaralblocdedades//Ficheros/F
 | //Ficheros/Fichero/Contenido | ContingutdelfitxerencasdetransferènciaperMTOM(enlacridacorresponalareferència XOPdelfitxer). |
 
     
-### 3.2.1 Remesa
+### 3.1.2 Remesa <a name="3.1.2"></a>
 
 | ![image](https://user-images.githubusercontent.com/32306731/137331712-bc31edd6-6b5b-4372-977b-6230938c4af6.png) | Per limitacions del sistema del SCT el fitxer de remesa no pot superar les 50 butlletes.
 Actualment el sistema del SCT únicament suporta l&#39;enviament de denúncies de tipus genèrica. No hi ha previsió a curt termini per rebre denúncies de velocitat o d&#39;alcoholèmia.
 ElSCT processa les remeses diàriament a les20h.Les remeses enviades posteriorment no es processaran fins al dia següent.
 Terminid&#39;enviament:
 
-- Caducitat de les denúncies:les denúncies no poden ser anteriors a 2mesos.
+- Caducitat de les denúncies: les denúncies no poden ser anteriors a 2 mesos.
 
 
 - El sistema de SCT treballa amb una finestra de processament de 3 dies laborables. Així,una remesa no pot contenir denúncies que puguin caducar abans de 3 dies des del&#39;enviament de la remesa.
@@ -85,25 +90,26 @@ Terminid&#39;enviament:
 
 | _Element_ | _Descripció_ |
 | --- | --- |
-| /DADES/CAPCALERA/FITXER\_PDA | Nomdefitxerdelaremesa.Nomenclatura:
-BUTCCCCCAAAAMMDDHHMI\_\&lt;num-ordre\&gt;.xml
+| /DADES/CAPCALERA/FITXER\_PDA | Nom de fitxer de la remesa. Nomenclatura: BUTCCCCCAAAAMMDDHHMI_<num-ordre>.xml
 on:
-- BUT:prefix.
-- CCCCC:codiINE delmunicipi.
-- AAAAMMDD:datad&#39;enviamentdelaremesa.
-- HHMI:hora de laremesa.
-- \&lt;num-ordre\&gt;: si s&#39;envia més d&#39;unaremesaenundia,éselnúmerod&#39;ordre(encas contrari:1).
-- Extensió:.xml
- |
-| /DADES/CAPCALERA/NUM\_BUTLLETES | Númerodebutlletesquecontélaremesa(màxim50). |
-| /DADES/BUTLLETES | Bloc dedadescorresponentalesbutlletes.
-ElSCTestableixunmàximde50butlletesperremesa. |
-| /DADES/BUTLLETES/BUTLLETA | Bloc dedadescorresponentaunabutlleta. |
+• BUT: prefix.
+• CCCCC: codi INE del municipi.
+• AAAAMMDD: data d’enviament de la
+remesa.
+• HHMI: hora de la remesa.
+• <num-ordre>: si s’envia més d’una
+remesa en un dia, és el número d’ordre
+(en cas contrari: 1).|
+| /DADES/CAPCALERA/NUM_BUTLLETES | Número de butlletes que conté la remesa (màxim 50). |
+| /DADES/BUTLLETES | Bloc de dades corresponent a les butlletes (El SCT estableix un màxim de 50 butlletes per remesa).  |
+| /DADES/BUTLLETES/BUTLLETA | Bloc de dades corresponent a una butlleta. |
 
-      1.
-#### Butlleta
 
-![](RackMultipart20211007-4-lhpxvq_html_15d7bada3f86fb56.png) ![](RackMultipart20211007-4-lhpxvq_html_7351847cce1286c1.png)
+      
+#### 3.1.2.1 Butlleta
+
+![image](https://user-images.githubusercontent.com/32306731/137348264-8922fc1e-1ca9-4f4c-bb6d-5b375c0bf948.png)![image](https://user-images.githubusercontent.com/32306731/137348293-1f5af3a1-3abb-47e5-b409-626661985a40.png)
+
 
 | _Element_ | _Descripció_ |
 | --- | --- |
