@@ -717,16 +717,16 @@ Per composar la línia de cobrament:
 - Referència (SSSSYYYYYYY-CC / SSSYYYYYYYY-CC) consta de tres parts:
 
   - Servei Territorial (SSSS, 4 posicions i 3 posicions per expedients de 8 dígits):
-    - Barcelona
+    - **Barcelona**
       - 0008: per expedients de menys de 8 posicions
       - 008: per expedients de 8 posicions
-    - Girona
+    - **Girona**
       - 0017: per expedients de menys de 8posicions
       - 017: per expedients de 8 posicions
-    - Lleida
+    - **Lleida**
       - 0025: per expedients de menys de 8 posicions
       - 025: per expedients de 8 posicions
-    - Tarragona
+    - **Tarragona**
       - 0043: per expedients de menys de 8 posicions
       - 043: per expedients de 8 posicions
 
