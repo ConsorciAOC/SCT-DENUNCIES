@@ -81,10 +81,8 @@ Terminid&#39;enviament:
 
 - Caducitat de les denúncies: les denúncies no poden ser anteriors a 2 mesos.
 
-
 - El sistema de SCT treballa amb una finestra de processament de 3 dies laborables. Així,una remesa no pot contenir denúncies que puguin caducar abans de 3 dies des del&#39;enviament de la remesa.
- |
-| --- | --- |
+
 
 ![image](https://user-images.githubusercontent.com/32306731/137331907-08511998-e779-482b-89d0-2cba19c4e1ed.png)
 
@@ -327,11 +325,11 @@ Encas de descripció ESPANYA actualmente lSCT no valida el format de la matrícu
 | //BUTLLETA/DENUNCIA\_ALCOHOLEMIA | Bloc de dades corresponents a les dades de la denúncia en cas de TIPUS\_DENUNCIA=A.Per més detalls vegeu l&#39;apartat [3.1.2.3.](#_bookmark7) |
 | //BUTLLETA/TARGETA | Bloc de dades corresponents a les dades depagament.Permésdetallsvegeul&#39;apartat[3.1.2.4.](#_bookmark8) |
 
-      1.
-#### Denúnciavelocitat
+  
+#### 3.1.2.2 Denúncia velocitat
 
-| ![](RackMultipart20211007-4-lhpxvq_html_2510d52f0494e7cf.png) | S&#39;ha previst aquest bloc de dades pel futur enviament de les denúncies de velocitat. Mentrestant,no s&#39;ha d&#39;informar el bloc de dadesDENUNCIA\_VELOCITAT(només es suporta TIPUS\_DENUNCIA=G). |
-| --- | --- |
+| ![image](https://user-images.githubusercontent.com/32306731/137351071-29a3ee46-a4b0-4a79-9251-231123277d7a.png) | S’ha previst aquest bloc de dades pel futur enviament de les denúncies de velocitat. Mentrestant, no s’ha d’informar el bloc de dades DENUNCIA_VELOCITAT (només es suporta TIPUS_DENUNCIA = G). |
+
 
 | _Element_ | _Descripció_ |
 | --- | --- |
@@ -351,11 +349,11 @@ Encas de descripció ESPANYA actualmente lSCT no valida el format de la matrícu
 | --- | --- |
 | //BUTLLETA/CODI\_ANTENA | Antena. |
 
-      1.
-#### Denúnciaalcoholèmia
+     
+#### 3.1.2.3 Denúncia alcoholèmia
 
-| ![](RackMultipart20211007-4-lhpxvq_html_2510d52f0494e7cf.png) | S&#39;ha previst aquest bloc de dades pel futur enviament de les denúncies d&#39;alcoholèmia. Mentrestant,no s&#39;ha d&#39;informar el bloc de dades DENUNCIA\_ALCOHOLEMIA(només es suporta TIPUS\_DENUNCIA=G). |
-| --- | --- |
+| ![image](https://user-images.githubusercontent.com/32306731/137351209-bc3df005-8413-41d4-8bde-b85436c0a80f.png) | S’ha previst aquest bloc de dades pel futur enviament de les denúncies d’alcoholèmia. Mentrestant, no s’ha d’informar el bloc de dades DENUNCIA_ALCOHOLEMIA (només es suporta TIPUS_DENUNCIA = G). |
+
 
 | _Element_ | _Descripció_ |
 | --- | --- |
@@ -380,11 +378,11 @@ Encas de descripció ESPANYA actualmente lSCT no valida el format de la matrícu
  |
 | //DENUNCIA\_ALCOHOLEMIA/NUMERO\_ETILOMETRE | Número de sèrie de l&#39;etilòmetre. |
 
-      1.
-#### Targeta
+    
+#### 3.1.2.4 Targeta
 
-| ![](RackMultipart20211007-4-lhpxvq_html_2510d52f0494e7cf.png) | S&#39;ha previs taquest bloc de dades per un possible ús futur del pagament amb targeta. Mentrestant, el valor de l&#39;element IND\_TARGETA serà sempre N. |
-| --- | --- |
+| ![image](https://user-images.githubusercontent.com/32306731/137351411-4736303c-be46-4f3e-aefc-d9b666ad8e56.png) | S&#39;ha previs taquest bloc de dades per un possible ús futur del pagament amb targeta. Mentrestant, el valor de l&#39;element IND\_TARGETA serà sempre N. |
+
 
 | _Element_ | _Descripció_ |
 | --- | --- |
@@ -404,9 +402,9 @@ Encas de descripció ESPANYA actualmente lSCT no valida el format de la matrícu
 | //TARGETA/DATA\_JUSTIFICANT | Data del justificant(formatAAAAMMDD). |
 | //TARGETA/HORA\_JUSTIFICANT | Hora del justificant(formatHHMISS). |
 
-    1. **Resposta**** específica**
+### 3.1.3 Resposta especiífica <a name="3.1.3"></a>
 
-![](RackMultipart20211007-4-lhpxvq_html_2a0d348306953ebf.jpg)
+![image](https://user-images.githubusercontent.com/32306731/137351916-64a9c7ad-166c-4db5-87ff-5e98d5935a5a.png)
 
 | _Element_ | _Descripció_ |
 | --- | --- |
@@ -441,8 +439,8 @@ Quan s&#39;intenta carregar una butlleta, si no supera les validacions del siste
  |
 | /respostaEnviamentRemesa/resultat/descripcio | Descripció del resultat. |
 
-      1.
-#### Codisd&#39;incidència
+      
+#### 3.1.3.1 Codis d’incidència
 
 | _Tipus_ | _Codi_ | _Descripció_ | _Campsvalidats_ | _Validació_ |
 | --- | --- | --- | --- | --- |
@@ -497,8 +495,8 @@ Elements la grandària dels quals és més grana la missatgeria de la |
 | CRÍTIC | ANU001 | Camp obligatori anul·lació NO informat | DATA\_HORA\_ANULLACIOMOTIU\_ANULLACIO | És obligatori quan l&#39;element ACCIO és &quot;B&quot; (anul·lació). |
 | CRÍTIC | MAT001 | Format matricula errònia | MATRICULA\_DENUNCIA | Actualment no es valida el format de la matrícula pels vehicles espanyols(DESCRIPCIO\_PAIS=ESPANYA)tot i que en un futur el SCT podria validar-lo. |
 
-      1.
-#### Formats de matrícula
+  
+#### 3.1.3.2 Formats de matrícula
 
 Formats de matrícula recomanats pel SCT:
 
@@ -533,8 +531,8 @@ CnnnnLLL
 | PMMnnnnLL | PMMnnnnbL | PGCnnnnnn | PGCnnnnLL | PGCnnnnbL |
  |
 
-  1.
-## Obtenció de rang de butlletes(SCT\_BUTLLETES)
+  
+### 3.2 Obtenció de rang de butlletes (SCT_BUTLLETES) <a name="3.2"></a>
 
 Les policies locals necessiten disposar de butlletes del SCT per poder interposar denúncies competència del SCT. Actualment disposen de talonaris de butlletes en paper lliurats per el SCT que tenen preimprès el número de butlleta(expedient).
 
@@ -549,7 +547,7 @@ LesdenúnciescompetènciadelSCThand&#39;estaridentificades per:
 Aquesta informació ha de mostrar-se en les butlletes que la policia local notifica als infractors. També en aquelles no notificades.
 
     
-### 3.2.1 Petició–dades específiques
+### 3.2.1 Petició–dades específiques <a name="3.2.1"></a>
 
 ![image](https://user-images.githubusercontent.com/32306731/137328706-df5c9ce6-fa3b-4350-9042-07e343fca52c.png)
 
@@ -558,7 +556,7 @@ Aquesta informació ha de mostrar-se en les butlletes que la policia local notif
 | /resposta Obtencio Rang Butlletes/NUM\_BUTLLETES\_SOLICITADES | Número de butlletes sol·licitades(màxim9999). |
 
     
-### 3.2.2 Resposta –dades específiques
+### 3.2.2 Resposta –dades específiques <a name="3.2.2"></a>
 
 ![image](https://user-images.githubusercontent.com/32306731/137328536-ce4cb9ec-160f-475e-a6a7-a4d8cbf4384d.png)
 
@@ -587,7 +585,7 @@ Aquesta informació ha de mostrar-se en les butlletes que la policia local notif
 | --- | --- |
 
   
-## 3.3 Descàrrega del catàleg de normatives(SCT\_CATALEG)
+## 3.3 Descàrrega del catàleg de normatives(SCT\_CATALEG) 
 
 Les policies locals necessiten disposar del catàleg de normatives per poder indicar la norma infringida quan interposenuna denúncia competència del SCT.
 
@@ -595,13 +593,13 @@ Actualmentdisposend&#39;uncatàlegd&#39;infraccionsimprèsenformatdeminillibre,q
 
 Per aquelles policies que s&#39;acullin al sistema de denúncies via PDA, s&#39;ofereix una modalitat per obtenir el catàleg de normatives en format digital.
 
-    1.
-### Petició–dadesespecífiques
+    
+### 3.3.1 Petició–dades específiques <a name="3.3.1"></a>
 
-Lamodalitatnorequereixcaptipusdedadesespecífiquesal&#39;horaderealitzarlapetició.
+La modalitat no requereix cap tipus de dades específiques a l’hora de realitzar la petició.
 
-    1.
-### Resposta –dadesespecífiques
+    
+### 3.3.2 Resposta –dades específiques <a name="3.3.2"></a>
 
 | _Element_ | _Descripció_ |
 | --- | --- |
@@ -634,17 +632,17 @@ Perexemple,100:000000010000. |
 - 0:consultarealitzadacorrectament.
 - 0502:errorrealitzantlaconsulta.
  |
-| /respostaConsultaCatalegNormatives/resultat/descripcio | Descripciódelresultat. |
+| /respostaConsultaCatalegNormatives/resultat/descripcio | Descripció del resultat. |
 
 ![image](https://user-images.githubusercontent.com/32306731/137328964-69421ef9-e63d-46a0-9f7c-9c24723aac9e.png)
 
 # Annexes
 
-## Càlculdeldígitdecontrold&#39;unnúmerod&#39;expedient
+## Càlcul del dígit de control d’un número d’expedient
 
-Donatunnúmerod&#39;expedient,eldígitdecontrolcorresponentescalculatalicomesdescriuacontinuació:
+Donat un número d’expedient, el dígit de control corresponent es calcula tal i com es descriu a continuació:
 
-1. Obtenirl&#39;emissoraalaquepertanyl&#39;expedient.
+1. Obtenir l’emissora a la que pertany l’expedient.
 
 | _Serveiterritorial_ | _Emissora_ |
 | --- | --- |
@@ -657,43 +655,31 @@ Donatunnúmerod&#39;expedient,eldígitdecontrolcorresponentescalculatalicomesdes
 | Lleida(25) | 8500484 |
 | Tarragona(43) | 8500540 |
 
-1. Sil&#39;emissoraés8500459eldígitdecontrolés9.
+2. Si l’emissora és 8500459 el dígit de control és 9.
 
-1. Altrament,percalculareldígitdecontrols&#39;hadediferenciarsil&#39;expedientésde7o8dígits(número d&#39;expedient\&gt;9999999).
+3. Altrament, per calcular el dígit de control s’ha de diferenciar si l’expedient és de 7 o 8 dígits (número d’expedient > 9999999).
+   
+Concatenar el servei territorial i el número d’expedient
+   
+• Expedient de 7 o menys dígits: formatant amb zeros per l’esquerra fins a 7 dígits.
+• Expedient de 8 dígits: no cal formatar per l’esquerra.
 
-Concatenarelserveiterritorialielnúmerod&#39;expedient
+i a aquest sumar-li el número de l’emissora i invertir el resultat.
 
-- Expedientde7omenysdígits:formatantambzerosperl&#39;esquerrafinsa7dígits.
-
-- Expedientde8dígits:nocalformatarperl&#39;esquerra.
-
-i a aquest sumar-li el número de l&#39;emissora i invertir el resultat.Perexemple,ambl&#39;expedient08/5168515iemissora8500514:
-
-085168515+8500514=93669029
+![image](https://user-images.githubusercontent.com/32306731/137354001-c03a7535-ffd6-45ac-8dde-fec450064212.png)
 
 Invertint-lo:
 
-92096639
+![image](https://user-images.githubusercontent.com/32306731/137354091-5df64abb-c438-496b-ac61-515df22cbee7.png)
 
 4. Multiplicar cada dígit del resultat obtingut pel valor que es troba en la mateixa posició en el següent array (constant).
 
-|
-2 |
-3 |
-4 |
-5 |
-6 |
-7 |
-8 |
-9 |
-2 |
-3 |
-4 |
+| 2 | 3 | 4 | 5 | 6 | 7 |8 | 9 | 2 | 3 | 4 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 (9\*2)+(2\*3)+(0\*4)+(9\*5)+(6\*6)+(6\*7)+(3\*8)+(9\*9)=252
 
-![image](https://user-images.githubusercontent.com/32306731/137285335-e6b319e8-d76d-4632-915e-92553adda3aa.png)
+![image](https://user-images.githubusercontent.com/32306731/137354261-e3c00e71-29d5-43ac-b6ef-498c1b285b43.png)
 
 
 5. Dividir el valor obtingut entre 11 i quedar-se amb el residu.
