@@ -1,13 +1,7 @@
 # SCT-PDA
 Documentació d'integració del servei SCT-PDA del Consorci AOC.
 
-
-![Shape1](RackMultipart20211007-4-lhpxvq_html_5602d5d1052c90d7.gif) ![Shape2](RackMultipart20211007-4-lhpxvq_html_3e4607557e4024fb.gif)
-
 ![](RackMultipart20211007-4-lhpxvq_html_9a7a6ca44ec1f4e7.png)
-
-![Shape3](RackMultipart20211007-4-lhpxvq_html_1b8fb08c0870b915.gif)
- ![Shape4](RackMultipart20211007-4-lhpxvq_html_201e7ff272053041.gif)
 
 ![image](https://user-images.githubusercontent.com/32306731/137329381-80aa8572-dce6-47b7-b687-c6df75a5ff37.png)
 
@@ -18,9 +12,6 @@ Documentació d'integració del servei SCT-PDA del Consorci AOC.
 
 ![image](https://user-images.githubusercontent.com/32306731/137329514-3b8da43c-0abd-44ed-9bf3-6e2e885d9f9f.png)
 
-
-![Shape5](RackMultipart20211007-4-lhpxvq_html_34bb42a41399ce18.gif)
- ![Shape6](RackMultipart20211007-4-lhpxvq_html_88f2446ea12b4e83.gif)
 
 ![](RackMultipart20211007-4-lhpxvq_html_9ee666534977765a.png)
 
@@ -53,6 +44,9 @@ ViaOberta –SCT Denúncies |
 DI-ViaOberta-SCTDenúncies.doc |
 
 **Històric de revisions**
+
+| Versió | Data | Autor | ComentarisTest |
+| --- | --- | --- | --- |
 
 |
 **Versió** |
@@ -142,8 +136,8 @@ Revisió del càlcul de lalínia de |
 
 [Text dels avisos legals a incloure en les butlletes 23](#_bookmark23)
 
-1.
-# Introducció
+
+# 1 Introducció
 
 Aquest document detallala missatgeria associada al servei d&#39;enviament de denúncies al Servei Català de Trànsit(enendavantSCT).
 
@@ -151,8 +145,8 @@ Per a poder realitzar la integració cal conèixer prèviament la següent docum
 
 - Document de Missatgeria Genèrica de la PCI del Consorci AOC.
 
-1.
-# Transmissions de dades disponibles
+
+# 2 Transmissions de dades disponibles
 
 Les dades disponibles a través del servei són les que es presenten a continuació:
 
@@ -160,20 +154,20 @@ Les dades disponibles a través del servei són les que es presenten a continuac
 | --- |
 | ServeiCatalàdeTrànsit |
 | **PRODUCTE** | **MODALITAT** | **DESCRIPCIO** |
-| **SCT\_DENUNCIES** | SCT\_REMESA | Enviamentderemesadebutlletes(frontal **asíncron** de laPCI). |
-| SCT\_BUTLLETES | Obtencióderangdebutlletes(frontal **síncron** delaPCI). |
+| **SCT\_DENUNCIES** | SCT\_REMESA | Enviament de remesa de butlletes(frontal **asíncron** de la PCI). |
+| SCT\_BUTLLETES | Obtenció de rang de butlletes(frontal **síncron** de la PCI). |
 | SCT\_CATALEG | Descàrregadel catàleg de normatives (frontal **síncron** de la PCI). |
 
-1.
-# Missatgeria del sserveis
 
-  1.
-## Enviament de remesade butlletes(SCT\_REMESA)
+# 3 Missatgeria del sserveis
+
+  
+## 3.1 Enviament de remesade butlletes(SCT\_REMESA)
 
 Enviament de les denúncies al sistema del SCT previa la seva incorporació al&#39;aplicació del Procediment Sancionador del SCT (PSN).
 
-    1.
-### Petició–dadesgenèriques
+    
+### 3.1.1 Petició–dades genèriques
 
 El fitxer corresponent a la remesas&#39;hadereferenciaralblocdedades//Ficheros/Fichero de les dades genèriques de la sol·licitud.
 
@@ -181,22 +175,22 @@ El fitxer corresponent a la remesas&#39;hadereferenciaralblocdedades//Ficheros/F
 | --- | --- |
 | //Ficheros/Fichero/Contenido | ContingutdelfitxerencasdetransferènciaperMTOM(enlacridacorresponalareferència XOPdelfitxer). |
 
-    1.
-### Remesa
+    
+### 3.2.1 Remesa
 
-| ![](RackMultipart20211007-4-lhpxvq_html_2510d52f0494e7cf.png) | Per limitacions del sistema del SCT el fitxer de remesa no pot superar les 50 butlletes.
-ActualmentelsistemadelSCTúnicamentsuportal&#39;enviamentdedenúnciesdetipusgenèrica.No hi ha previsió a curt termini per rebre denúncies de velocitat o d&#39;alcoholèmia.
+| ![image](https://user-images.githubusercontent.com/32306731/137331712-bc31edd6-6b5b-4372-977b-6230938c4af6.png) | Per limitacions del sistema del SCT el fitxer de remesa no pot superar les 50 butlletes.
+Actualment el sistema del SCT únicament suporta l&#39;enviament de denúncies de tipus genèrica. No hi ha previsió a curt termini per rebre denúncies de velocitat o d&#39;alcoholèmia.
 ElSCT processa les remeses diàriament a les20h.Les remeses enviades posteriorment no es processaran fins al dia següent.
 Terminid&#39;enviament:
 
 - Caducitat de les denúncies:les denúncies no poden ser anteriors a 2mesos.
 
 
-- El sistema de SCT treballa amb una finestra de processament de 3 dies laborables. Així,una remesa no pot contenir denúncies que puguin caducar abans de 3 dies des del&#39;enviamentdelaremesa.
+- El sistema de SCT treballa amb una finestra de processament de 3 dies laborables. Així,una remesa no pot contenir denúncies que puguin caducar abans de 3 dies des del&#39;enviament de la remesa.
  |
 | --- | --- |
 
-![](RackMultipart20211007-4-lhpxvq_html_65792acda1c64307.png)
+![image](https://user-images.githubusercontent.com/32306731/137331907-08511998-e779-482b-89d0-2cba19c4e1ed.png)
 
 | _Element_ | _Descripció_ |
 | --- | --- |
