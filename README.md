@@ -1,11 +1,7 @@
 # SCT-PDA
 Documentació d'integració del servei SCT-PDA del Consorci AOC.
 
-
-
 # **Via Oberta - SCT Denúncies**
-
-**Document d&#39;integració del servei**
 
 
 **Índex**
