@@ -9,52 +9,42 @@ Documentació d'integració del servei SCT-PDA del Consorci AOC.
 ![Shape3](RackMultipart20211007-4-lhpxvq_html_1b8fb08c0870b915.gif)
  ![Shape4](RackMultipart20211007-4-lhpxvq_html_201e7ff272053041.gif)
 
-# **Via**
+![image](https://user-images.githubusercontent.com/32306731/137329381-80aa8572-dce6-47b7-b687-c6df75a5ff37.png)
 
-#
 
-# **Oberta**
+# **Via Oberta - SCT Denúncies**
 
-#
+# **Document d&#39;integració del servei**
 
-# **–**
+![image](https://user-images.githubusercontent.com/32306731/137329514-3b8da43c-0abd-44ed-9bf3-6e2e885d9f9f.png)
 
-#
-
-# **SCT**
-
-#
-
-# **Denúncies**
-
-# **Documentd&#39;integraciódelservei**
 
 ![Shape5](RackMultipart20211007-4-lhpxvq_html_34bb42a41399ce18.gif)
  ![Shape6](RackMultipart20211007-4-lhpxvq_html_88f2446ea12b4e83.gif)
 
 ![](RackMultipart20211007-4-lhpxvq_html_9ee666534977765a.png)
 
-Realitzat per: Àrea de Tecnologia - ProjectesVersió: 1.1
+Realitzat per: Àrea de Tecnologia - Projectes
+Versió: 1.1
+Data: 17/5/2021
 
-Data:17/5/2021
+**Control del document**
 
-**Control del**** document**
-
-**Informació**** general**
+**Informació general**
 
 |
 **Títol:** |
-ViaOberta –SCTDenúncies |
+ViaOberta –SCT Denúncies |
 | --- | --- |
 |
-**Creatper:** |
+**Creat per:** |
 ÀreadeTecnologia -Projectes |
 |
-**Arevisarper:** |
-ÀreadeTecnologia -SuportTècnic |
+**A revisar per:** |
+Àrea de Tecnologia -Suport Tècnic |
 |
 **Aaprovarper:** |
-ÀreadeTecnologia-SuportTècnic |
+Àrea de Tecnologia-Suport Tècnic |
 |
 **Llistadedistribució:** |
  |
@@ -62,7 +52,7 @@ ViaOberta –SCTDenúncies |
 **Nomdeldocument:** |
 DI-ViaOberta-SCTDenúncies.doc |
 
-**Històric**** de ****revisions**
+**Històric de revisions**
 
 |
 **Versió** |
