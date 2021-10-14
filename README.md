@@ -1,112 +1,12 @@
 # SCT-PDA
 Documentació d'integració del servei SCT-PDA del Consorci AOC.
 
-![](RackMultipart20211007-4-lhpxvq_html_9a7a6ca44ec1f4e7.png)
-
-![image](https://user-images.githubusercontent.com/32306731/137329381-80aa8572-dce6-47b7-b687-c6df75a5ff37.png)
 
 
 # **Via Oberta - SCT Denúncies**
 
-# **Document d&#39;integració del servei**
+**Document d&#39;integració del servei**
 
-![image](https://user-images.githubusercontent.com/32306731/137329514-3b8da43c-0abd-44ed-9bf3-6e2e885d9f9f.png)
-
-
-![](RackMultipart20211007-4-lhpxvq_html_9ee666534977765a.png)
-
-Realitzat per: Àrea de Tecnologia - Projectes
-Versió: 1.1
-Data: 17/5/2021
-
-**Control del document**
-
-**Informació general**
-
-|
-**Títol:** |
-ViaOberta –SCT Denúncies |
-| --- | --- |
-|
-**Creat per:** |
-ÀreadeTecnologia -Projectes |
-|
-**A revisar per:** |
-Àrea de Tecnologia -Suport Tècnic |
-|
-**Aaprovarper:** |
-Àrea de Tecnologia-Suport Tècnic |
-|
-**Llistadedistribució:** |
- |
-|
-**Nomdeldocument:** |
-DI-ViaOberta-SCTDenúncies.doc |
-
-**Històric de revisions**
-
-| Versió | Data | Autor | ComentarisTest |
-| --- | --- | --- | --- |
-
-|
-**Versió** |
-**Data** |
-**Autor** |
-**Comentaris** |
-| --- | --- | --- | --- |
-|
-V1.0 |
-23/02/2013 |
-CarlosMenaFernandez |
-Creaciódeldocument |
-| --- | --- | --- | --- |
-|
-V1.1 |
-13/04/2021 |
-RogerNoguerai Arnau |
-Recuperaciódelserveiirevisiódel |
-| --- | --- | --- | --- |
-|
- |
- |
- | càlculdeldígitdecontroldel&#39;expedient. |
-|
- |
- |
-ServeiCatalàdeTrànsit |
-Revisió del càlcul de lalínia de |
-|
- |
- |
- | cobrament,codidebarresitextdels |
-|
- |
- |
- | avisoslegals aincloureenlesbutlletes. |
-|
- |
- |
- |
- |
-| --- | --- | --- | --- |
-|
- |
- |
- |
- |
-| --- | --- | --- | --- |
-|
- |
- |
- |
- |
-| --- | --- | --- | --- |
-|
- |
- |
- |
- |
-| --- | --- | --- | --- |
 
 **Índex**
 
