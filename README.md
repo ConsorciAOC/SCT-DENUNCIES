@@ -127,22 +127,22 @@ Revisió del càlcul de lalínia de |
 **Índex**
 
 1. [Introducció 1](#_bookmark0)
-2. [Transmissionsdedades disponibles 1](#_bookmark1)
+2. [Transmissions de dades disponibles 1](#_bookmark1)
 3. [Missatgeria dels serveis 1](#_bookmark2)
-  1. [Enviamentderemesadebutlletes (SCT\_REMESA) 1](#_bookmark3)
+  1. [Enviament de remesa de butlletes (SCT\_REMESA) 1](#_bookmark3)
     1. [Petició–dades genèriques 1](#_bookmark4)
     2. [Remesa 2](#_bookmark5)
     3. [Resposta específica 11](#_bookmark9)
-  2. [Obtencióderangde butlletes (SCT\_BUTLLETES) 15](#_bookmark12)
+  2. [Obtenció de rang de butlletes (SCT\_BUTLLETES) 15](#_bookmark12)
     1. [Petició–dades específiques 16](#_bookmark13)
     2. [Resposta–dades específiques 16](#_bookmark14)
-  3. [Descàrregadelcatàlegde normatives (SCT\_CATALEG) 17](#_bookmark15)
+  3. [Descàrrega del catàleg de normatives (SCT\_CATALEG) 17](#_bookmark15)
     1. [Petició–dades específiques 17](#_bookmark16)
     2. [Resposta–dades específiques 17](#_bookmark17)
 
 [Annexes 19](#_bookmark18)
 
-[Càlculdeldígitdecontrold&#39;unnúmerod&#39;expedient19](#_bookmark19)
+[Càlcul del dígit de control d'un número d'expedient 19](#_bookmark19)
 
 [Líniadecobrament icodidebarresd&#39;unabutlletadesanció20](#_bookmark20)
 
@@ -150,21 +150,21 @@ Revisió del càlcul de lalínia de |
 
 [Codidebarres 22](#_bookmark22)
 
-[Textdelsavisos legalsaincloureenlesbutlletes 23](#_bookmark23)
+[Text dels avisos legals a incloure en les butlletes 23](#_bookmark23)
 
 1.
 # Introducció
 
-Aquestdocumentdetallalamissatgeriaassociadaalserveid&#39;enviamentdedenúnciesalServeiCatalàdeTrànsit(enendavantSCT).
+Aquest document detallala missatgeria associada al servei d&#39;enviament de denúncies al Servei Català de Trànsit(enendavantSCT).
 
-Perapoderrealitzar laintegraciócalconèixerprèviamentlasegüentdocumentació:
+Per a poder realitzar la integració cal conèixer prèviament la següent documentació:
 
-- DocumentdeMissatgeriaGenèricade laPCI delConsorciAOC.
+- Document de Missatgeria Genèrica de la PCI del Consorci AOC.
 
 1.
-# Transmissionsdedadesdisponibles
+# Transmissions de dades disponibles
 
-Lesdadesdisponiblesa travésdel serveisón lesqueespresentenacontinuació:
+Les dades disponibles a través del servei són les que es presenten a continuació:
 
 | **EMISSOR** |
 | --- |
@@ -175,17 +175,17 @@ Lesdadesdisponiblesa travésdel serveisón lesqueespresentenacontinuació:
 | SCT\_CATALEG | Descàrregadel catàleg de normatives (frontal **síncron** de la PCI). |
 
 1.
-# Missatgeriadelsserveis
+# Missatgeria del sserveis
 
   1.
-## Enviamentderemesadebutlletes(SCT\_REMESA)
+## Enviament de remesade butlletes(SCT\_REMESA)
 
-EnviamentdelesdenúnciesalsistemadelSCTprevialasevaincorporacióal&#39;aplicaciódelProcediment SancionadordelSCT (PSN).
+Enviament de les denúncies al sistema del SCT previa la seva incorporació al&#39;aplicació del Procediment Sancionador del SCT (PSN).
 
     1.
 ### Petició–dadesgenèriques
 
-Elfitxercorresponentalaremesas&#39;hadereferenciaralblocdedades//Ficheros/Ficherodelesdadesgenèriques delasol·licitud.
+El fitxer corresponent a la remesas&#39;hadereferenciaralblocdedades//Ficheros/Fichero de les dades genèriques de la sol·licitud.
 
 | _Element_ | _Descripció_ |
 | --- | --- |
@@ -263,17 +263,17 @@ Permésdetallssobreelmecanismed&#39;obtenciódelrangdebutlletesvegeu l&#39;apart
  |
 | //BUTLLETA/TIPUS\_VIA | Laviaidentificaelllocons&#39;hacoméslainfracció,potserdedos tipus:
 
-- V:Viainterurbana(carretera)
-- C:Viaurbana(carrer)
-Quanlaviaésinterurbanas&#39;had&#39;indicar:
+- V:Via interurbana(carretera)
+- C:Via urbana(carrer)
+Quan la via és interurbana s'ha d'indicar:
 
-- Al&#39;elementVIA,elcodide carretera(p.e.C-33).
-- Al&#39;elementVIA\_NUMERO,elpuntquilomètricdeladenúncia (format fins a dos dígits decimals iseparadorcoma,p.e.11,20).
+- A l'element VIA,elcodide carretera(p.e.C-33).
+- A l'element VIA\_NUMERO,el punt quilomètric de la denúncia (format fins a dos dígits decimals iseparadorcoma,p.e.11,20).
 
-Quanlaviaésurbanas&#39;had&#39;indicar:
+Quan la via és urbana s'ha d'indicar:
 
-- Al&#39;elementVIA,elnomdelcarrer.
-- Al&#39;elementVIA\_NUMERO,elnúmerodecarrerdeladenúncia(valorsencersensepartdecimal).
+- A l'element VIA,el nom del carrer.
+- A l'element VIA\_NUMERO,el número de carrer de la denúncia(valor sencer sense part decimal).
  |
 | //BUTLLETA/VIA | Viadeladenúncia. |
 | //BUTLLETA/VIA\_NUMERO | Númerodelavia. |
@@ -302,9 +302,9 @@ Perexemple,100:000000010000. |
 - 0005:Regulaciódetrànsit
 - 0006:Provaesportiva/recreativa
 - 0007:Transportespecial
-- 0008:Desobediènciaagent
+- 0008:Desobediència agent
 - 0009:Helicòpter
-- 0010:Inexistènciallocperaturarinfractor
+- 0010:Inexistèncialloperaturarinfractor
 - 0011:Serveiapeu
 - 0012:Formularunaaltradenúncia
 - 0013:Perillperalacirculació
@@ -901,58 +901,53 @@ Pelquefaalacomposició delcodide barresde46 dígitstenim:
 
 ![Shape47](RackMultipart20211007-4-lhpxvq_html_f556900526b51d9b.gif)
 
-![](RackMultipart20211007-4-lhpxvq_html_92efe5ef7d85f2ca.png)
+![image](https://user-images.githubusercontent.com/32306731/137281095-b86e4677-b97f-465f-8eec-cb3bb8f26b4d.png)
 
-## Textdelsavisoslegalsaincloureenlesbutlletes
 
-INFORMACIÓIADVERTÈNCIESLEGALS
+## Text dels avisos legals a incloure en les butlletes
 
-Sigles de les normes: R, Reglament general de circulació (RD 1428/03); V, Reglament general devehicles (RD 2822/98); G, Reglament general de conductors (RD 818/09); A, Llei sobre responsabilitatcivil i assegurança en la circulació de vehicles de motor (Rdleg. 8/04); TRLSV, text refós de la Lleisobretrànsit,circulaciódevehiclesdemotoriseguretatviària(RDL6/2015);E,Reglamentd&#39;autoescoles(RD1295/03).
+INFORMACIÓ I ADVERTÈNCIES LEGALS
 
-NOTIFICACIÓDELADENÚNCIA IINCOACIÓDELPROCEDIMENT
+Sigles  de  les  normes:  R,  Reglament  general  de  circulació  (RD  1428/03);  V,  Reglament  general  de vehicles (RD 2822/98); G, Reglament general de conductors (RD 818/09); A, Llei sobre responsabilitat civil  i  assegurança  en  la  circulació  de  vehicles  de  motor  (Rdleg.  8/04);  TRLSV,  text  refós  de  la  Llei sobre  trànsit,  circulació  de  vehicles  de  motor  i  seguretat  viària  (RDL  6/2015);  E,  Reglament d'autoescoles (RD 1295/03).
 
-Usnotifiquemaquestadenúnciaiusfemsaberquequedaincoatelcorresponentprocedimentsancionador(article89TRLSV)
+NOTIFICACIÓ DE LA DENÚNCIA I INCOACIÓ DEL PROCEDIMENT
 
-PROCEDIMENTABREUJATIPROCEDIMENTORDINARI
+Us  notifiquem  aquesta  denúncia  i  us  fem  saber  que  queda  incoat  el  corresponent  procediment sancionador (article89 TRLSV)
 
-Si us voleu acollir a la tramitació pel procediment abreujat, disposeu d&#39;un termini de 20 dies naturalsdes de la notificació per realitzar el pagament de l&#39;import de la sanció, amb un descompte del 50%.Aquest procediment implica: la renúncia a formular al·legacions (es tindran per no presentades), lafinalització del procediment sense dictar resolució expressa, l&#39;esgotament de la via administrativa(nomésespodrà
+PROCEDIMENT ABREUJAT I PROCEDIMENT ORDINARI
 
-recórrer davant del Jutjat ) i la fermesa de la sanció des del moment del pagament. Si la sanció ésgreu i no comporta detracció de punts, no s&#39;anotarà com antecedent en el Registre de conductors iinfractors. En cas de no efectuar el pagament amb descompte del 50%, continua la tramitació pelprocediment ordinari, que us permet formular al·legacions i proposar o aportar proves en el termini de20dies naturals des dela
+Si us voleu acollir a la tramitació pel procediment abreujat, disposeu d'un termini de 20 dies naturals des  de  la  notificació  per  realitzar  el  pagament  de  l'import  de  la  sanció,  amb  un  descompte  del  50%. Aquest  procediment  implica:  la  renúncia  a  formular  al·legacions  (es  tindran  per  no  presentades),  la finalització  del  procediment  sense  dictar  resolució  expressa,  l'esgotament  de  la  via  administrativa (només es podràrecórrer  davant  del  Jutjat  )  i  la  fermesa  de  la  sanció  des  del  moment  del  pagament.  Si  la  sanció  és greu  i  no  comporta  detracció  de  punts,  no  s'anotarà  com  antecedent  en  el  Registre  de  conductors  i infractors.  En  cas  de  no  efectuar  el  pagament  amb  descompte  del  50%,  continua  la  tramitació  pelprocediment ordinari, que us permet formular al·legacions i proposar o aportar proves en el termini de 20 dies naturals des de lanotificació.  L'escrit  d'al·legacions  s'ha  d'adreçar  al  Servei  Territorial  de  Trànsit  corresponent  i  es  pot presentar en qualsevol dels registres legalment establerts (*).  Si no formuleu al·legacions ni aboneu l'import  de  la  sanció,  aquesta  denúncia  tindrà  efecte  d'acte  resolutori  del  procediment  sancionador. Contra  la  sanció  es  podrà  interposar  recurs  de  reposició,  amb  caràcterpotestatiu,  en  el  termini  d'un mes.  La  sanciópodrà  executar-se  transcorreguts  30  dies  naturals  des  de  la  notificació  d'aquesta denúncia.
 
-notificació. L&#39;escrit d&#39;al·legacions s&#39;ha d&#39;adreçar al Servei Territorial de Trànsit corresponent i es potpresentar en qualsevol dels registres legalment establerts (\*).Si no formuleu al·legacions ni aboneul&#39;import de la sanció, aquesta denúncia tindrà efecte d&#39;acte resolutori del procediment sancionador.Contra la sanció es podrà interposar recurs de reposició, amb caràcter potestatiu, en el termini d&#39;unmes. La sanció podrà executar-se transcorreguts 30 dies naturals des de la notificació d&#39;aquestadenúncia.
+ÒRGANS QUE INTERVENEN EN EL PROCEDIMENT
 
-ÒRGANSQUEINTERVENEN ENELPROCEDIMENT
+Òrgan  instructor:  el/la  cap  del  Servei  Territorial  de  Trànsit  de  Barcelona.  Autoritat  sancionadora:  la persona  titular  de  la  Direcció  del  Servei  Català  de  Trànsit  (article  11.1  de  la  Llei  14/1997,  de  24  de desembre, de creació del Servei Català de Trànsit, D.O.G.C. núm. 5537, de 31-12-2009)
 
-Òrgan instructor: el/la cap del Servei Territorial de Trànsit de Barcelona. Autoritat sancionadora: lapersona titular de la Direcció del Servei Català de Trànsit (article 11.1 de la Llei 14/1997, de 24 dedesembre,decreació del ServeiCatalàdeTrànsit,D.O.G.C.núm.5537,de 31-12-2009)
+RESOLUCIÓ DE L'EXPEDIENT SANCIONADOR
 
-RESOLUCIÓDEL&#39;EXPEDIENTSANCIONADOR
+El  termini  màxim  per  resoldre  i  notificar  la  resolució  de  l'expedient  sancionador  iniciat  mitjançant aquesta denúncia és d'un any des de l'inici del procediment (article 112.3 TRLSV)
 
-Elterminimàximperresoldreinotificarlaresoluciódel&#39;expedientsancionadoriniciatmitjançantaquestadenúnciaésd&#39;unanydes de l&#39;inicidelprocediment(article112.3TRLSV)
-
-PÈRDUADEPUNTSEN ELSPERMISOSILLICÈNCIESDECONDUCCIÓ
+PÈRDUA DE PUNTS EN ELS PERMISOS I LLICÈNCIES DE CONDUCCIÓ
 
 Els punts indicats a aquesta butlleta es detrauran quan la sanció sigui ferma. Podeu consultar el saldodepunts en [www.dgt.es](http://www.dgt.es/)
 
-NOTIFICACIONSELECTRÒNIQUES
+NOTIFICACIONS ELECTRÒNIQUES
 
-LaTRLSVhaestablertqueapartirdel24-11-2010espuguinefectuarlesnotificacionspermitjanselectrònics.Siusvoleu acollir aaquestapossibilitat,consulteuelweb[http://transit.gencat.cat](http://transit.gencat.cat/)
+La  TRLSV  ha  establert  que  a  partir  del  24-11-2010  es  puguin  efectuar  les  notificacionsper  mitjans electrònics. Si us voleu acollir a aquesta possibilitat, consulteu el web[http://transit.gencat.cat](http://transit.gencat.cat/)
 
-FORMADEPAGAMENT
+FORMA DE PAGAMENT
 
-Podeuutilitzaruna de lessegüentsmodalitatsperferefectiuelpagament dela multa:
+Podeu utilitzar una de les següents modalitats per fer efectiu el pagament de la multa:
 
-- Pagar-ladirectamentambtargetaal&#39;agentqueushadenunciat.
+- Pagar-la directament amb targeta a l’agent que us ha denunciat.
 
-- Pagar-laambaquestimprès,perl&#39;importifinsladatalímitdepagamentreflectitsalpeudelabutlletadedenúncia,aqualsevoldelesoficines deCaixaBank.
+- Pagar-la amb aquest imprès, per l’import i fins la data límit de pagament reflectits al peu de la butlleta de denúncia, a qualsevol de les oficines de CaixaBank.
 
-- Pagar-laambtargeta,directamentaqualsevoldelesdependènciesterritorialsdelServeiCatalàdeTrànsit.
+- Pagar-la  amb targeta, directament a qualsevol de  les dependències territorials del  Servei Català de Trànsit.
 
-- Pagar-laperinternetmitjançantelportal[http://tramits.gencat.cat](http://tramits.gencat.cat/)
+- Pagar-la per internet mitjançant el portal[http://tramits.gencat.cat](http://tramits.gencat.cat/)
 
-(\*) Els subjectes **obligats a relacionar-se electrònicament** amb l&#39;administració (art 14.2 i 14.3 de laLlei 39/2015 i art 3 de l&#39;Ordre PDA/20/2019) han de presentar les al·legacions per internet accedint alweb[http://transit.gencat.cat.](http://transit.gencat.cat/)
+(*) Els subjectes **obligats a relacionar-se electrònicament** amb l’administració (art 14.2i 14.3de la Llei 39/2015 i art 3 de l’Ordre PDA/20/2019) han de presentar les al·legacions per internet accedint al web[http://transit.gencat.cat.](http://transit.gencat.cat/)
 
-PROTECCIÓDEDADES.
+PROTECCIÓ DE DADES.
 
-Tractament SCT: Expedients sancionadors per infraccions de trànsit. Responsable: la persona titulardelaDirecciódel&#39;SCT(Diputació,355,08009Barcelona).ContacteDelegatdeprotecciódedades:Diputació, 355, 08009 Barcelonao [dpd.interior@gencat.cat](mailto:dpd.interior@gencat.cat)Finalitat: gestionar les dadesrelatives als expedients sancionadors que s´incoïn per infraccions en aquesta matèria. Informacióaddicionalaccediual[webdel&#39;SCT.](http://transit.gencat.cat/ca/el_servei/proteccio_dades/)
-
-TractamentAjuntamentde...............:amblafinalitatdegeneraraquestdocument,lesdadespersonals seran tractades per l&#39;Ajuntament dexxxxxxxxxxxxxxxxxxxxxxPodeu consultar informacióaddicionalsobreaquesttractament i protecció de dades enwww.xxxxxxxxxxxxxxxxxxxx
+Tractament SCT: Expedients sancionadors per infraccions de trànsit. Responsable: la persona titular de  la  Direcció  de  l’SCT  (Diputació,  355,  08009  Barcelona).  Contacte  Delegat  de  protecció  de dades:Diputació,  355,  08009  Barcelonao dpd.interior@gencat.catFinalitat:  gestionar  les  dades relatives  als  expedients  sancionadors  que  s ́incoïn  per  infraccions  en  aquesta  matèria.  Informació addicional accediu al web de l'SCT.Tractament  Ajuntament  de  ...............:  amb  la  finalitat  de  generar  aquest  document,  les  dades personals seran tractades per l’Ajuntament de  xxxxxxxxxxxxxxxxxxxxxx   Podeu consultar informació addicional sobre aquest tractament i protecció de dades en www.xxxxxxxxxxxxxxxxxxxx
