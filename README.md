@@ -6,32 +6,27 @@ Documentació d'integració del servei SCT-PDA del Consorci AOC.
 
 **Índex**
 
-1. [Introducció 1](#_bookmark0)
-2. [Transmissions de dades disponibles 1](#_bookmark1)
-3. [Missatgeria dels serveis 1](#_bookmark2)
-  1. [Enviament de remesa de butlletes (SCT\_REMESA) 1](#_bookmark3)
-    1. [Petició–dades genèriques 1](#_bookmark4)
-    2. [Remesa 2](#_bookmark5)
-    3. [Resposta específica 11](#_bookmark9)
-  2. [Obtenció de rang de butlletes (SCT\_BUTLLETES) 15](#_bookmark12)
-    1. [Petició–dades específiques 16](#_bookmark13)
-    2. [Resposta–dades específiques 16](#_bookmark14)
-  3. [Descàrrega del catàleg de normatives (SCT\_CATALEG) 17](#_bookmark15)
-    1. [Petició–dades específiques 17](#_bookmark16)
-    2. [Resposta–dades específiques 17](#_bookmark17)
-
-[Annexes 19](#_bookmark18)
-
-[Càlcul del dígit de control d'un número d'expedient 19](#_bookmark19)
-
-[Líniadecobrament icodidebarresd&#39;unabutlletadesanció20](#_bookmark20)
-
-[Líniadecobrament 20](#_bookmark21)
-
-[Codidebarres 22](#_bookmark22)
-
-[Text dels avisos legals a incloure en les butlletes 23](#_bookmark23)
-
+1. [Introducció](#1)
+2. [Transmissions de dades disponibles](#2)
+3. [Missatgeria dels serveis](#3)
+   1. [Sol·licitud de publicació](#3.1)
+      1. [Petició–dades genèriques](#3.1.1)
+      2. [Remesa](#3.1.2)
+      3. [Resposta específica](#3.1.3)
+   2. [Obtenció de rang de butlletes (SCT\_BUTLLETES)](#3.2)
+      1. [Petició – dades específiques](#3.2.1)
+      2. [Resposta – dades específiques](#3.2.2)
+   3. [Descàrrega del catàleg de normatives (SCT\_CATALEG)](#3.3)
+      1. [Petició – dades específiques](#3.3.1)
+      2. [Resposta – dades específiques](#3.3.2)
+   4. [Annexes](#3.1)
+      1. Càlcul del dígit de control d'un número d'expedient
+      2. Línia de cobrament i codidebarresd&#39;unabutlletadesanció
+      3. Línia de cobrament
+      4. Codi de barres
+      5. Text dels avisos legals a incloure en les butlletes
+ 
+ 
 
 # 1 Introducció
 
