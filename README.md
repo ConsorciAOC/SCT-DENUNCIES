@@ -123,37 +123,17 @@ Permés detalls sobre el mecanisme d&#39; obtenció del rang de butlletes vegeu 
 
 | _Element_ | _Descripció_ |
 | --- | --- |
-|
- |
- |
-| //BUTLLETA/TIPUS\_VIA | Laviaidentificaelllocons&#39;hacoméslainfracció,potserdedos tipus:
-
-- V:Via inter urbana(carretera)
-- C:Via urbana(carrer)
-Quan la via és interurbana s'ha d'indicar:
-
-- A l'element VIA, el codi de carretera(p.e.C-33).
-- A l'element VIA\_NUMERO,el punt quilomètric de la denúncia (format fins a dos dígits decimals iseparadorcoma,p.e.11,20).
-
-Quan la via és urbana s'ha d'indicar:
-
-- A l'element VIA,el nom del carrer.
-- A l'element VIA\_NUMERO,el número de carrer de la denúncia(valor sencer sense part decimal).
- |
+| //BUTLLETA/TIPUS\_VIA | <ul>**La via identifica el lloc on s’ha comés la infracció, pot ser de dos tipus:**<li>V: Via interurbana (carretera)</li><li>C: Via urbana (carrer)<br></li>**Quan la via és interurbana s’ha d’indicar:**<li>A l’element VIA, el codi de carretera (p.e. C-33).</li><li>A l’element VIA_NUMERO, el punt quilomètric de la denúncia (format fins a dos dígits decimals i separador coma, p.e. 11,20).<br></li>**Quan la via és urbana s’ha d’indicar:**<li>A l’element VIA, el nom del carrer.</li><li>A l’element VIA_NUMERO, el número de carrer de la denúncia (valor sencer sense part decimal).</li></ul>|
 | //BUTLLETA/VIA | Via de la denúncia. |
 | //BUTLLETA/VIA\_NUMERO | Número de la via. |
 | //BUTLLETA/DESCRIPCIO\_POBLACIO | Descripció de la població. |
 | //BUTLLETA/DIRECCIO\_DENUNCIA | Sentit de la denúncia. |
 | //BUTLLETA/NUM\_AGENT\_COBRADOR | Número de l&#39;agent cobrador. |
-| //BUTLLETA/IMPORT\_NOMINAL | Import de la quantia de la denúncia amb dos decimals.10 primeres posicions és la part sencera (amb zeros al&#39;esquerra) i les dues darreres la part decimal.
-Per exemple,100:000000010000. |
+| //BUTLLETA/IMPORT\_NOMINAL | Import de la quantia de la denúncia amb dos decimals.10 primeres posicions és la part sencera (amb zeros al&#39;esquerra) i les dues darreres la part decimal.<ul><li>Per exemple,100:000000010000.</li></ul>|
 | //BUTLLETA/IMPORT\_PAGAT | Import pagat de la butlleta amb dos decimals.Format idèntica IMPORT\_NOMINAL. |
 | //BUTLLETA/IMPORT\_DESCOMPTE | Import de la denúncia amb descompte amb dos decimals. Format idèntica IMPORT\_NOMINAL. |
 | //BUTLLETA/DATA\_LIMIT\_DESCOMPTE | Data límit del descompte(format AAAAMMDD).20 dies des de la data de la infracció segons llei actual. |
-| //BUTLLETA/IND\_NOTIFICACIO | Indicador de signatura denunciat i notificació:
-- X:no notificada.
-- S:notificada.
- |
+| //BUTLLETA/IND\_NOTIFICACIO | Indicador de signatura denunciat i notificació:<ul><li>X:no notificada.</li><li>S:notificada.</li></ul>|
 | //BUTLLETA/M\_NO\_NOTIF | Motiu no notificació(obligatori quan és una denúncia no notificada): |
 
 | _Element_ | _Descripció_ |
