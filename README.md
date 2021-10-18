@@ -45,7 +45,6 @@ Les dades disponibles a través del servei són les que es presenten a continuac
 | --- |
 | ServeiCatalàdeTrànsit |
 
-
 | **PRODUCTE** | **MODALITAT** | **DESCRIPCIO** | 
 | --- | --- | --- |
 | SCT\_DENUNCIES | SCT\_REMESA | Enviament de remesa de butlletes(frontal **asíncron** de la PCI). |
@@ -86,7 +85,7 @@ Terminid&#39;enviament:
 
 ![image](https://user-images.githubusercontent.com/32306731/137331907-08511998-e779-482b-89d0-2cba19c4e1ed.png)
 
-| **ELEMENT** | **DESCRIPCIÓ** |
+|  _Element_ | _Descripció_ |
 | --- | --- | 
 | /DADES/CAPCALERA/FITXER\_PDA |  Nom de fitxer de la remesa. Nomenclatura: BUTCCCCCAAAAMMDDHHMI_<num-ordre>.xml <ul><li>on:</li><li>BUT: prefix.</li><li>CCCCC: codi INE del municipi.</li><li>AAAAMMDD: data d’enviament de la remesa.</li><li>HHMI: hora de la remesa.</li><li>num-ordre: si s’envia més d’una remesa en un dia, és el número d’ordre(en cas contrari: 1).</li></ul> |
 | /DADES/CAPCALERA/NUM_BUTLLETES | Número de butlletes que conté la remesa (màxim 50). |
@@ -109,11 +108,7 @@ Dins del sistema del SCTl&#39;identificador de la denúncia són elselements SER
 | //BUTLLETA/NUM\_EXPEDIENT | Número d&#39;expedient.Identificador de la denúncia en el sistemade lSCT.És un número de butlleta del rang de números de butlleta que s&#39;ha lliurat a l&#39;Ajuntament.
 Permés detalls sobre el mecanisme d&#39; obtenció del rang de butlletes vegeu l&#39;apartat |
 | //BUTLLETA/DIGIT\_CONTROL | Dígit de control de la butlleta. Vegeu l&#39;annex [_Càlcul del_](#_bookmark19)[_dígit __de control__ d&#39;un número__d&#39;expedient_.](#_bookmark19) |
-| //BUTLLETA/TIPUS\_DENUNCIA | Tipusdedenúncia:
-- G:genèrica.
-- A: alcoholèmia (aquest cas requereix informar blocdedades DENUNCIA\_ALCOHOLEMIA).
-- V:velocitat(aquestcasrequereixinformarblocdedades DENUNCIA\_VELOCITAT).
- |
+| //BUTLLETA/TIPUS\_DENUNCIA | Tipus de denúncia: <ul><li>G: genèrica.</li><li>A: alcoholèmia (aquest cas requereix informar bloc de dades DENUNCIA_ALCOHOLEMIA).</li><li>V: velocitat (aquest cas requereix informar bloc de dades DENUNCIA_VELOCITAT).</li></ul> |
 | //BUTLLETA/DATA\_DENUNCIA | Data de la denúncia(formatAAAAMMDD). |
 | //BUTLLETA/HORA\_DENUNCIA | Hora de lad enúncia(format HHMISS). |
 | //BUTLLETA/IDIOMA\_DENUNCIA | C:català/E:castellà |
