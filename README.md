@@ -86,18 +86,9 @@ Terminid&#39;enviament:
 
 ![image](https://user-images.githubusercontent.com/32306731/137331907-08511998-e779-482b-89d0-2cba19c4e1ed.png)
 
-| _Element_ | _Descripció_ |
-| --- | --- |
-| /DADES/CAPCALERA/FITXER\_PDA | Nom de fitxer de la remesa. Nomenclatura: BUTCCCCCAAAAMMDDHHMI_<num-ordre>.xml
-on:
-• BUT: prefix.
-• CCCCC: codi INE del municipi.
-• AAAAMMDD: data d’enviament de la
-remesa.
-• HHMI: hora de la remesa.
-• <num-ordre>: si s’envia més d’una
-remesa en un dia, és el número d’ordre
-(en cas contrari: 1).|
+| **ELEMENT** | **DESCRIPCIÓ** |
+| --- | --- | 
+| /DADES/CAPCALERA/FITXER\_PDA |  Nom de fitxer de la remesa. Nomenclatura: BUTCCCCCAAAAMMDDHHMI_<num-ordre>.xml <ul><li>on:</li><li>BUT: prefix.</li><li>CCCCC: codi INE del municipi.</li><li>AAAAMMDD: data d’enviament de la remesa.</li><li>HHMI: hora de la remesa.</li><li>num-ordre: si s’envia més d’una remesa en un dia, és el número d’ordre(en cas contrari: 1).</li></ul> |
 | /DADES/CAPCALERA/NUM_BUTLLETES | Número de butlletes que conté la remesa (màxim 50). |
 | /DADES/BUTLLETES | Bloc de dades corresponent a les butlletes (El SCT estableix un màxim de 50 butlletes per remesa).  |
 | /DADES/BUTLLETES/BUTLLETA | Bloc de dades corresponent a una butlleta. |
