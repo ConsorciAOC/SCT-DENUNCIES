@@ -19,12 +19,12 @@ Documentació d'integració del servei SCT-PDA del Consorci AOC.
    3. [3.3 Descàrrega del catàleg de normatives (SCT\_CATALEG)](#3.3)
       1. [3.3.1 Petició – dades específiques](#3.3.1)
       2. [3.3.2 Resposta – dades específiques](#3.3.2)
-   4. [Annexes]
-      1. Càlcul del dígit de control d'un número d'expedient
-      2. Línia de cobrament i codidebarresd&#39;unabutlletadesanció
-      3. Línia de cobrament
-      4. Codi de barres
-      5. Text dels avisos legals a incloure en les butlletes
+ 4. [Annexes](#4)
+      1. [4.1 Càlcul del dígit de control d'un número d'expedient](#4.1)
+      2. [4.2 Línia de cobrament i codi de barre sd'una butlleta de sanció](#4.2)
+      3. [4.3 Línia de cobrament](#4.4)
+      4. [4.4 Codi de barres](#4.4)
+      5. [4.5 Text dels avisos legals a incloure en les butlletes](#4.5)
  
  
 
@@ -72,6 +72,7 @@ El fitxer corresponent a la remesas&#39;hadereferenciaralblocdedades//Ficheros/F
 
     
 ### 3.1.2 Remesa <a name="3.1.2"></a>
+
 
 | ![image](https://user-images.githubusercontent.com/32306731/137331712-bc31edd6-6b5b-4372-977b-6230938c4af6.png) | Per limitacions del sistema del SCT el fitxer de remesa no pot superar les 50 butlletes.
 Actualment el sistema del SCT únicament suporta l&#39;enviament de denúncies de tipus genèrica. No hi ha previsió a curt termini per rebre denúncies de velocitat o d&#39;alcoholèmia.
@@ -551,7 +552,7 @@ Aquesta informació ha de mostrar-se en les butlletes que la policia local notif
 | --- | --- |
 
   
-## 3.3 Descàrrega del catàleg de normatives(SCT\_CATALEG) 
+## 3.3 Descàrrega del catàleg de normatives(SCT\_CATALEG) <a name="3.3"></a>
 
 Les policies locals necessiten disposar del catàleg de normatives per poder indicar la norma infringida quan interposenuna denúncia competència del SCT.
 
@@ -602,9 +603,9 @@ Perexemple,100:000000010000. |
 
 ![image](https://user-images.githubusercontent.com/32306731/137328964-69421ef9-e63d-46a0-9f7c-9c24723aac9e.png)
 
-# Annexes
+# 4. Annexes <a name="4"></a>
 
-## Càlcul del dígit de control d’un número d’expedient
+## 4.1 Càlcul del dígit de control d’un número d’expedient <a name="4.1"></a>
 
 Donat un número d’expedient, el dígit de control corresponent es calcula tal i com es descriu a continuació:
 
@@ -663,7 +664,7 @@ butlletes.
 
 ![image](https://user-images.githubusercontent.com/32306731/137284289-9ea74e0c-27bb-445b-8600-7d695a6b3939.png)
 
-### Línia de cobrament
+### 4.3 Línia de cobrament <a name="4.3"></a>
 
 Per composar la línia de cobrament:
 
@@ -710,7 +711,7 @@ Depenent de si l’expedient es 8 o menys posicions el format de la referència 
 
 - Import amb descompte: S.C.
 
-### Codi de barres
+### 4.4 Codi de barres <a name="4.4"></a>
 
 Pel que fa a la composició del codi de barres de 46 dígits tenim:
 
@@ -740,7 +741,7 @@ format i com es genera el caràcter de control que s’ha d’incloure.
 ![image](https://user-images.githubusercontent.com/32306731/137281095-b86e4677-b97f-465f-8eec-cb3bb8f26b4d.png)
 
 
-## Text dels avisos legals a incloure en les butlletes
+## 4.5 Text dels avisos legals a incloure en les butlletes <a name="4.5"></a>
 
 INFORMACIÓ I ADVERTÈNCIES LEGALS
 
