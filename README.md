@@ -1,6 +1,7 @@
 # SCT-PDA
 Documentació d'integració del servei SCT-PDA del Consorci AOC.
 
+
 # **Via Oberta - SCT Denúncies**
 
 
@@ -21,7 +22,7 @@ Documentació d'integració del servei SCT-PDA del Consorci AOC.
       2. [3.3.2 Resposta – dades específiques](#3.3.2)
  4. [Annexes](#4)
       1. [4.1 Càlcul del dígit de control d'un número d'expedient](#4.1)
-      2. [4.2 Línia de cobrament i codi de barre sd'una butlleta de sanció](#4.2)
+      2. [4.2 Línia de cobrament i codi de barres d'una butlleta de sanció](#4.2)
       3. [4.3 Línia de cobrament](#4.4)
       4. [4.4 Codi de barres](#4.4)
       5. [4.5 Text dels avisos legals a incloure en les butlletes](#4.5)
@@ -43,7 +44,7 @@ Les dades disponibles a través del servei són les que es presenten a continuac
 
 | **EMISSOR** |
 | --- |
-| ServeiCatalàdeTrànsit |
+| Servei Català de Trànsit |
 
 | **PRODUCTE** | **MODALITAT** | **DESCRIPCIO** | 
 | --- | --- | --- |
@@ -68,7 +69,7 @@ El fitxer corresponent a la remesas&#39;hadereferenciaralblocdedades//Ficheros/F
 
 | _Element_ | _Descripció_ |
 | --- | --- |
-| //Ficheros/Fichero/Contenido | ContingutdelfitxerencasdetransferènciaperMTOM(enlacridacorresponalareferència XOPdelfitxer). |
+| //Ficheros/Fichero/Contenido | Contingut del fitxer en cas de transferència per MTOM (en la crida correspon a la referència XOP del fitxer). |
 
     
 ### 3.1.2 Remesa <a name="3.1.2"></a>
@@ -137,149 +138,40 @@ Permés detalls sobre el mecanisme d&#39; obtenció del rang de butlletes vegeu 
 | //BUTLLETA/IND\_NOTIFICACIO | Indicador de signatura denunciat i notificació:<ul><li>X:no notificada.</li><li>S:notificada.</li></ul>|
 | //BUTLLETA/M\_NO\_NOTIF | Motiu no notificació(obligatori quan és una denúncia no notificada): |
 
+   
 | _Element_ | _Descripció_ |
 | --- | --- |
-|
- |
-- 0001:Conductor absent
-- 0002:Circular en sentit contrari
-- 0003:Assistència en accident
-- 0004:Servei d&#39;urgència
-- 0005:Regulació de trànsit
-- 0006:Prova esportiva/recreativa
-- 0007:Transport especial
-- 0008:Desobediència agent
-- 0009:Helicòpter
-- 0010:Inexistèncialloperaturar infractor
-- 0011:Servei a peu
-- 0012:Formular una altra denúncia
-- 0013:Perill per a la circulació
-- 0014:Responsabilitat titular
-- 0015:Completar dades
-- 0017:Seguretat per a la resta d&#39;usuaris
-- 0018:Requalificació de denuncia
-- 0019:Imatge captada automàticament
-- 0020:Atestats
-- 0021:Vehicle no logotipat
-- 0022:Denúncia voluntària
-- 0023:Manca resultat analítica
-- 0024:Control estupefaents/RESIDENT
-- 0025:Denúncia incoada d&#39;ofici
-- 0026:Manca resultat analítica
- |
+| |<ul><li>0001:Conductor absent</li><li>0002:Circular en sentit contrari</li><li>0003:Assistència en accident</li><li>0004:Servei d&#39;urgència</li><li>0005:Regulació de trànsit</li><li>0006:Prova esportiva/recreativa</li><li>0007:Transport especial</li><li>0008:Desobediència agent</li><li>0009:Helicòpter</li><li>0010:Inexistèncialloperaturar infractor</li><li>0011:Servei a peu</li><li>0012:Formular una altra denúncia</li><li>0013:Perill per a la circulació</li><li>0014:Responsabilitat titular</li><li>0015:Completar dades</li><li>0017:Seguretat per a la resta d&#39;usuaris</li><li>0018:Requalificació de denuncia</li><li>0019:Imatge captada automàticament</li><li>0020:Atestats</li><li>0021:Vehicle no logotipat</li><li>0022:Denúncia voluntària</li><li>0023:Manca resultat analítica</li><li>0024:Control estupefaents/RESIDENT</li><li>0025:Denúncia incoada d&#39;ofici</li><li>0026:Manca resultat analítica</li></ul>|
 | //BUTLLETA/DATA\_HORA\_ANULLACIO | Data i hora de l&#39;anul·lació(formatAAAA-MM-DDHH:MI:SS). Obligatori quan és una denúncia anul·lada. |
-| //BUTLLETA/MOTIU\_ANULLACIO | Motiu anul·lació.Obligatori quan és una denúncia anul·lada:
-
-- 0001:Fet no sancionable
-- 0002:Denúncia duplicada
-- 0003:Butlleta anul·lada per l&#39;agent
-- 0004:Butlleta deteriorada
-- 0005:Manca de competència per sancionar
-- 0006:Retard en la tramesa denúncia al SCT
-- 0007:Error/Manca dades bàsiques denúncia
-- 0008:Error o manca de DNI
-- 0009:Denúncies de Transports
-- 0010:Fotos no vàlides
-- 0011:Anul·lada canvi adscripció territorial
-- 0012:Butlleta anul·lada per reposició models
-- 0013:Butlleta anul·lada per docència
-- 0014:Butlleta anul·lada a petició SCT
-- 0015:SENSE ESPECIFICAR
-- 0016:Butlleta no utilitzada
-- 0017:Trasllat de l&#39;expedient
-- 0018:Prescripció de la infracció
-- 0021:Fet no sancionable
-- 0024:Trasllat de l&#39;expedient
-- 0025:Prescripció de la infracció
- |
-
-| _Element_ | _Descripció_ |
-| --- | --- |
-|
- |
-- 0026:Erroromancaenlesdadesbàsiques
-- 0027:ErroromancadeDNI
-- 0028:Fotosnovàlides
-- 0029:Butlletesanul·ladesd&#39;ofici
-- 0030:Mancacertificat
-- 0031:Mancacompetènciasancionar
-- 0032:PDA-CriticaNonotificada
-- 0033:Resultatnegatiu
-- 0034:Butlletanoutilitzada
-- 0035:Baixapererrorenl&#39;aplicacióPDA
- |
-| //BUTLLETA/IND\_DGT\_VEHICLE |
-- S:dades del vehicle obtingudes de consulta a la base de dades de la DGT
-- N:introduïdesmanualment perl&#39;agent
- |
+| //BUTLLETA/MOTIU\_ANULLACIO | Motiu anul·lació.Obligatori quan és una denúncia anul·lada: <ul><li>0001:Fet no sancionable</li><li>0002:Denúncia duplicada</li><li>0003:Butlleta anul·lada per l&#39;agent</li><li>0004:Butlleta deteriorada</li><li>0005:Manca de competència per sancionar</li><li>0006:Retard en la tramesa denúncia al SCT</li><li>0007:Error/Manca dades bàsiques denúncia</li><li>0008:Error o manca de DNI</li><li>0009:Denúncies de Transports</li><li>0010:Fotos no vàlides</li><li>0011:Anul·lada canvi adscripció territorial</li><li>0012:Butlleta anul·lada per reposició models</li><li>0013:Butlleta anul·lada per docència</li><li>0014:Butlleta anul·lada a petició SCT</li><li>0015:SENSE ESPECIFICAR</li><li>0016:Butlleta no utilitzada</li><li>0017:Trasllat de l&#39;expedient</li><li>0018:Prescripció de la infracció</li><li>0021:Fet no sancionable</li><li>0024:Trasllat de l&#39;expedient</li><li>0025:Prescripció de la infracció</li><li>0026: Error o manca en les dades bàsiques</li><li>0027: Error o manca de DNI</li><li>0028: Fotos no vàlides</li><li>0029: Butlletes anul·lades d'ofici</li><li>0030: Manca certificat</li><li>0031: Manca competència sancionar</li><li>0032: PDA - Critica No notificada</li><li>0032: PDA - Critica No notificada</li><li>0033: Resultat negatiu</li><li>0034: Butlleta no utilitzada</li><li>0035: Baixa per error en l'aplicació PDA</li></ul>| //BUTLLETA/IND\_DGT\_VEHICLE |<ul><li>S: dades del vehicle obtingudes de consulta a la base de dades de la DGT</li><li>N: introduïdes manualment per l'agent</li></ul>| 
 | //BUTLLETA/DESCRIPCIO\_MARCA | Marca. |
 | //BUTLLETA/DESCRIPCIO\_MODEL | Model. |
 | //BUTLLETA/COLOR\_VEHICLE | Color. |
-| //BUTLLETA/TIPUS\_VEHICLE |
-- 00:Sense valor
-- 01:Bicicleta
-- 02:Ciclomotor
-- 03:Motocicleta
-- 04:Turisme
-- 05:Furgoneta
-- 06:Remolc
-- 07:Camió
-- 08:Autobús
-- 09:Altres vehicles
-- 10:Temporals
-- 11:Turístiques
-- 12:Vehicle especial
-- 23:Motocicleta estrangera
-- 24:Turisme estranger
-- 25:Furgoneta estrangera
-- 27:Camió estranger
-- 28:Autobús estranger
-- 29:Vehicle genèric
-- 30:Vehicle especial
- |
+| //BUTLLETA/TIPUS\_VEHICLE | <ul><li>00:Sense valor</li><li>01:Bicicleta</li><li>02:Ciclomotor</li><li>03:Motocicleta</li><li>04:Turisme</li><li>05:Furgoneta</li><li>06:Remolc</li><li>07:Camió</li><li>08:Autobús</li><li>09:Altres vehicles</li><li>0:Temporals</li><li>11:Turístiques</li><li>12:Vehicle especial</li><li>23:Motocicleta estrangera</li><li>24:Turisme estranger</li><li>25:Furgoneta estrangera</li><li>27:Camió estranger</li><li>28:Autobús estranger</li><li>29:Vehicle genèric</li><li>30:Vehicle especial</li></ul>|
 | //BUTLLETA/MATRICULA\_DENUNCIA | Número de la matrícula. |
 | //BUTLLETA/NUMERO\_BASTIDOR | Número de bastidor. |
-| //BUTLLETA/DESCRIPCIO\_PAIS | Descripció del país.ESPANYAen cas d&#39;Espanya.
-Encas de descripció ESPANYA actualmente lSCT no valida el format de la matrícula pels vehicles espanyols però es recomana ajustar-se als formats proposats en l&#39;apartat [3.1.3.2](#_bookmark11) si en un futur el SCT realitza la validació. |
-
-| _Element_ | _Descripció_ |
-| --- | --- |
-| //BUTLLETA/IND\_IMMOBILITZACIO\_VEH | Indicador d&#39;immobilització del vehicle (S/ N). |
-| //BUTLLETA/NUM\_ACTA\_IMMOBILITZACIO | Número d&#39;acta d&#39;immobilització. Obligatori si IND\_IMMOBILITZACIO\_VEH=S. |
+| //BUTLLETA/DESCRIPCIO\_PAIS | Descripció del país.ESPANYA en cas d&#39;Espanya.<ul>En cas de descripció ESPANYA actualment el SCT no valida el format de la matrícula pels vehicles espanyols però es recomana ajustar-se als formats proposats en l’apartat 3.1.3.2 si en un futur el SCT realitza la validació.</ul>|
+| //BUTLLETA/IND\_IMMOBILITZACIO\_VEH | Indicador d'immobilització del vehicle (S/ N). |
+| //BUTLLETA/NUM\_ACTA\_IMMOBILITZACIO | Número d’acta d’immobilització. Obligatori si IND_IMMOBILITZACIO_VEH = S. |
 | //BUTLLETA/NOM\_TITULAR | Nom del titular. |
 | //BUTLLETA/COGNOM1\_TITULAR | Primer cognom del titular. |
 | //BUTLLETA/COGNOM2\_TITULAR | Segon cognom del titular. |
-| //BUTLLETA/NIF\_TITULAR | Número de document identificador del titular /propietaridelvehicle(NIF,NIE,CIF,passaportoaltresdocuments). |
-| //BUTLLETA/ADRECA\_TITULAR | Adreçadeltitular. |
+| //BUTLLETA/NIF\_TITULAR | Número de document identificador del titular / propietari del vehicle (NIF, NIE, CIF, passaport o altres documents). |
+| //BUTLLETA/ADRECA\_TITULAR | Adreça del titular. |
 | //BUTLLETA/POBLACIO\_TITULAR | Població del titular. |
 | //BUTLLETA/PROVINCIA\_TITULAR | Província del titular. |
 | //BUTLLETA/CODI\_POSTAL\_TITULAR | Codi postal del titular. |
-| //BUTLLETA/FET\_DENUNCIAT | Descripció del fet denunciat.Text lliure,si bé pot  portar la informació del catàleg de normatives. |
+| //BUTLLETA/FET\_DENUNCIAT | Descripció del fet denunciat. Text lliure, si bé pot portar la informació del catàleg de normatives. |
 | //BUTLLETA/FET\_DENUNCIAT2 | Descripció del fet denunciat.Text lliure addicional. |
-| //BUTLLETA/IND\_DGT\_CONDUCTOR |
-- S:dades del conductor obtingudes de consulta a la base de dades de la DGT
-- N:Introduïdes manualment per l&#39;agent
- |
-| //BUTLLETA/INDICADOR\_CONDUCTOR |
-- I:infractornoconductor
-- C:conductor
- |
-| //BUTLLETA/TIPUS\_DOCUMENT |
-- 01:Persona física
-- 02:Persona jurídica
-- 03:Estranger resident
-- 04:Estranger no resident
-- 05:Sense identificar
- |
+| //BUTLLETA/IND\_DGT\_CONDUCTOR |<ul><li>S: dades del conductor obtingudes de consulta a la base de dades de la DGT</li><li>N: Introduïdes manualment per l'agent</li></ul>|
+| //BUTLLETA/INDICADOR\_CONDUCTOR |<ul><li>I: infractor no conductor</li><li>C: conductor</li></ul>|
+| //BUTLLETA/TIPUS\_DOCUMENT | <ul><li>01:Persona física</li><li>02:Persona jurídica</li><li>03:Estranger resident</li><li>04:Estranger no resident</li><li>05:Sense identificar</li></ul>|
 | //BUTLLETA/NUMERO\_DOCUMENT | Número de document. |
 | //BUTLLETA/TIPUS\_PERMIS | Classe permís de conduir(A,B,etc.). |
 | //BUTLLETA/DATA\_EXPEDICIO | Data d&#39;expedició(formatAAAAMMDD). |
 | //BUTLLETA/NOM\_CONDUCTOR | Nomd el conductor. |
 | //BUTLLETA/COGNOM1\_CONDUCTOR | Primer cognom del conductor. |
 | //BUTLLETA/COGNOM2\_CONDUCTOR | Segon cognom del conductor. |
-
-| _Element_ | _Descripció_ |
-| --- | --- |
 | //BUTLLETA/DATA\_NAIXEMENT\_CONDUCTOR | Data de naixement(formatAAAAMMDD). |
 | //BUTLLETA/DESCRIPCIO\_PAIS\_CONDUCTOR | Nacionalitat del conductor. |
 | //BUTLLETA/DOMICILI\_CONDUCTOR | Domicili del conductor. |
@@ -288,9 +180,9 @@ Encas de descripció ESPANYA actualmente lSCT no valida el format de la matrícu
 | //BUTLLETA/OBSERVACIONS | Observacions. |
 | //BUTLLETA/IMATGE | Butlleta codificada en base 64(màxim400K). |
 | //BUTLLETA/TIPUS\_IMATGE | Format de la butlleta(jpg/pdf). |
-| //BUTLLETA/DENUNCIA\_VELOCITAT | Bloc de dades corresponents a les dades de la denúncia en cas de TIPUS\_DENUNCIA=V.Per més detalls vegeu l&#39;apartat [3.1.2.2.](#_bookmark6) |
-| //BUTLLETA/DENUNCIA\_ALCOHOLEMIA | Bloc de dades corresponents a les dades de la denúncia en cas de TIPUS\_DENUNCIA=A.Per més detalls vegeu l&#39;apartat [3.1.2.3.](#_bookmark7) |
-| //BUTLLETA/TARGETA | Bloc de dades corresponents a les dades depagament.Permésdetallsvegeul&#39;apartat[3.1.2.4.](#_bookmark8) |
+| //BUTLLETA/DENUNCIA\_VELOCITAT |Bloc de dades corresponents a les dades de la denúncia en cas de TIPUS_DENUNCIA = V. Per més detalls vegeu l’apartat 3.1.2.2. |
+| //BUTLLETA/DENUNCIA\_ALCOHOLEMIA | Bloc de dades corresponents a les dades de la denúncia en cas de TIPUS_DENUNCIA = A. Per més detalls vegeu l’apartat 3.1.2.3. |
+| //BUTLLETA/TARGETA | Bloc de dades corresponents a les dades de pagament. Per més detalls vegeu l’apartat 3.1.2.4. |
 
   
 #### 3.1.2.2 Denúncia velocitat
@@ -300,20 +192,11 @@ Encas de descripció ESPANYA actualmente lSCT no valida el format de la matrícu
 
 | _Element_ | _Descripció_ |
 | --- | --- |
-| //DENUNCIA\_VELOCITAT/VELOCITAT\_REGISTRADA | Km/h.
-- 3 primers dígits:part sencera,zeros a l&#39;esquerra
-- 3 darrers dígits:part decimal,zeros a la dreta Per exemple,142 Km/h: 142000.
- |
-| //DENUNCIA\_VELOCITAT/VELOCITAT\_LIMIT | Km/h.4dígitssencers,zerosal&#39;esquerra.Perexemple,120 Km/h: 0120. |
-| //DENUNCIA\_VELOCITAT/TIPUS\_LIMITACIO |
-- U:Limitació envia urbana
-- I:Limitació envia interurbana
-- F:Limitació fixada per senyal
- |
+   | //DENUNCIA\_VELOCITAT/VELOCITAT\_REGISTRADA | Km/h. <ul><li>3 primers dígits: part sencera, zeros a l’esquerra</li><li>3 darrers dígits: part decimal, zeros a la dreta
+Per exemple, 142 Km/h: 142000.</li></ul> |
+| //DENUNCIA\_VELOCITAT/VELOCITAT\_LIMIT | Km/h. 4 dígits sencers, zeros a l’esquerra. Per exemple, 120 Km/h: 0120. |
+| //DENUNCIA\_VELOCITAT/TIPUS\_LIMITACIO | <lu><li>U: Limitació en via urbana</li><li>I: Limitació en via interurbana</li><li>F: Limitació fixada per senyal</li></lu>|
 | //DENUNCIA\_VELOCITAT/CINEMOMETRE | Cinemòmetre. |
-
-| _Element_ | _Descripció_ |
-| --- | --- |
 | //BUTLLETA/CODI\_ANTENA | Antena. |
 
      
@@ -324,25 +207,14 @@ Encas de descripció ESPANYA actualmente lSCT no valida el format de la matrícu
 
 | _Element_ | _Descripció_ |
 | --- | --- |
-| //DENUNCIA\_ALCOHOLEMIA/TIPUS\_LECTURA |
-- A:Aire espirat
-- S:Contingut en sang
- |
-| //DENUNCIA\_ALCOHOLEMIA/PCT\_1\_LECTURA | Taxa alcoholèmia 1a prova.
-- 3 primers dígits: part sencera, zeros a l&#39;esquerra
-- 3 darrers dígits: part decimal, zeros a la dreta Perexemple,0,39: 000390.
- |
+| //DENUNCIA\_ALCOHOLEMIA/TIPUS\_LECTURA | <lu><li>A: Aire espirat</li><li>S: Contingut en sang</li></lu> |
+   | //DENUNCIA\_ALCOHOLEMIA/PCT\_1\_LECTURA | Taxa alcoholèmia 1a prova. <lu><li>3 primers dígits: part sencera, zeros a l’esquerra</li><li>3 darrers dígits: part decimal, zeros a la dreta. Per exemple, 0,39: 000390.</li></lu>|
 | //DENUNCIA\_ALCOHOLEMIA/DATA\_1\_LECTURA | Data 1a prova(format AAAAMMDD). |
 | //DENUNCIA\_ALCOHOLEMIA/HORA\_1\_LECTURA | Hora 1a prova(formatHHMISS). |
 | //DENUNCIA\_ALCOHOLEMIA/PCT\_2\_LECTURA | Taxa alcoholèmia 2a prova. Format idèntic a PCT\_1\_LECTURA. |
 | //DENUNCIA\_ALCOHOLEMIA/DATA\_2\_LECTURA | Data 2a prova(format AAAAMMDD). |
 | //DENUNCIA\_ALCOHOLEMIA/HORA\_2\_LECTURA | Hora 2a prova(formatHHMISS). |
-| //DENUNCIA\_ALCOHOLEMIA/MODEL\_ETILOMETRE |
-- 01:Dräger Alcotest 7110
-- 02:Lion 1400LS
-- 03:Dräger Alcotest 7410
-- 04:Alcotest7110-E
- |
+| //DENUNCIA\_ALCOHOLEMIA/MODEL\_ETILOMETRE | <lu><li>01:Dräger Alcotest 7110</li><li>02:Lion 1400LS</li><li>03:Dräger Alcotest 7410</li><li>04:Alcotest7110-E</li></lu>|
 | //DENUNCIA\_ALCOHOLEMIA/NUMERO\_ETILOMETRE | Número de sèrie de l&#39;etilòmetre. |
 
     
@@ -353,13 +225,7 @@ Encas de descripció ESPANYA actualmente lSCT no valida el format de la matrícu
 
 | _Element_ | _Descripció_ |
 | --- | --- |
-| //TARGETA/IND\_TARGETA |
-- S:pagament amb targeta
-- N:sensetargeta, no implica que s&#39;hagi fet el pagament en metàl·lic
- |
-
-| _Element_ | _Descripció_ |
-| --- | --- |
+| //TARGETA/IND\_TARGETA | <lu><li>S: pagament amb targeta</li><li>N: sense targeta, no implica que s'hagi fet el pagament en metàl·lic</li></lu>|
 | //TARGETA/NUMERO\_TARGETA | 4últims dígits de la targeta. |
 | //TARGETA/DATA\_CADUCITAT\_TARGETA | Data de caducitat de la targeta(format AAAAMMDD). |
 | //TARGETA/NUMERO\_TERMINAL | Número de terminal. |
@@ -375,35 +241,24 @@ Encas de descripció ESPANYA actualmente lSCT no valida el format de la matrícu
 
 | _Element_ | _Descripció_ |
 | --- | --- |
-| /respostaEnviamentRemesa/DADES | Bloc dedadescorresponentaldetalldel&#39;enviament de la remesa. |
-| //DADES/CAPCALERA/FITXER\_PDA | Nom de fitxer de la remesa.Referència de la remesa. |
-| //DADES/CAPCALERA/NUM\_BUTLLETES | Númerode butlletesquecontélaremesa. |
-| //DADES/CAPCALERA/CODI\_INCIDENCIA | Codidelaincidència. |
-| //DADES/CAPCALERA/DESCRIPCIO\_INCIDENCIA | Descripciódelaincidència |
+| /respostaEnviamentRemesa/DADES | Bloc de dades corresponent al detall de l&#39;enviament de la remesa. |
+| //DADES/CAPCALERA/FITXER\_PDA | Nom de fitxer de la remesa. Referència de la remesa. |
+| //DADES/CAPCALERA/NUM\_BUTLLETES | Númerode butlletes que conté la remesa. |
+| //DADES/CAPCALERA/CODI\_INCIDENCIA | Codi de la incidència. |
+| //DADES/CAPCALERA/DESCRIPCIO\_INCIDENCIA | Descripció de la incidència |
 | //DADES/BUTLLETES/BUTLLETA | Bloc de dades corresponent al resultat del tractament d&#39;una butlleta. |
 | //DADES/BUTLLETES/BUTLLETA/ID\_BUTLLETA | Identificador de la butlleta en el sistema origeno |
-
-| _Element_ | _Descripció_ |
-| --- | --- |
-|
- | identificadordinsde laremesa. |
+| | identificador dins de la remesa. |
 | //DADES/BUTLLETES/BUTLLETA/SERVEI\_TERRIT | Servei territorial. |
 | //DADES/BUTLLETES/BUTLLETA/NUM\_EXPEDIENT | Número d&#39;expedient. |
-| //DADES/BUTLLETES/BUTLLETA/RESULTAT |
-- 0:tractamentcorrecte
-- 1:contébutlletesamb errors no crítics
-- 2:contébutlletesamb errors crítics
-Quan s&#39;intenta carregar una butlleta, si no supera les validacions del sistema del SCT queda marcada com a crítica i no es tramita. Per tal de tramitar-la cal reenviar-la amb l&#39;error crític corregit. |
+| //DADES/BUTLLETES/BUTLLETA/RESULTAT |<lu><li>0: tractament correcte</li><li>1: conté butlletes amb errors no crítics</li><li>2: conté butlletes amb errors crítics</li><li>Quan s&#39;intenta carregar una butlleta, si no supera les validacions del sistema del SCT queda marcada com a crítica i no es tramita. Per tal de tramitar-la cal reenviar-la amb l&#39;error crític corregit.</li></lu> |
 | //DADES/BUTLLETES/BUTLLETA/DATA\_LIMIT | Per a butlletes crítiques, data màxima per a reenviar-la amb les dades corregides(formatAAAAMMDD). |
 | //DADES/BUTLLETES/BUTLLETA/INCIDENCIES | Bloc de dades corresponent a la relació d&#39;incidències detectades en la butlleta. |
 | //INCIDENCIES/INCIDENCIA | Bloc de dades corresponent a una incidència detectada en la butlleta. |
-| //INCIDENCIA/CODI\_INCIDENCIA | Codi de incidència.Vegeu apartat[3.1.3.1](#_bookmark10) d&#39;aquest document. |
+| //INCIDENCIA/CODI\_INCIDENCIA | Codi de incidència. Vegeu apartat 3.1.3.1 d’aquest document. |
 | //INCIDENCIA/DESCRIPCIO\_INCIDENCIA | Descripció d&#39;incidència. |
-| //INCIDENCIA/INFORMACIO\_ADDICIONAL | Informació addicional de la incidència. |
-| /respostaEnviamentRemesa/resultat/codiResultat |
-- 0: enviament de la remesa realitzat correctament (detalls de cada butlleta a l&#39;element DADES).
-- 0502:error realitzant l&#39;enviament.
- |
+| //INCIDENCIA/INFORMACIO\_ADDICIONAL | Informació addicional de la incidència. | 
+| /respostaEnviamentRemesa/resultat/codiResultat | <lu><li>0: enviament de la remesa realitzat correctament (detalls de cada butlleta a l’element DADES).</li><li>0502: error realitzant l’enviament.</li></lu> |
 | /respostaEnviamentRemesa/resultat/descripcio | Descripció del resultat. |
 
       
@@ -657,7 +512,7 @@ Invertint-lo:
 
 Així,el número d&#39;expedient complert serà 08/5168515-0.
 
-## Línia de cobrament i codi de barres d&#39;una butlleta de sanció
+## 4.2 Línia de cobrament i codi de barres d&#39;una butlleta de sanció <a name="4.2"></a>
 
 A continuació es detalla com generar la línia de cobrament i codi de barres que cal incorporar a les
 butlletes.
