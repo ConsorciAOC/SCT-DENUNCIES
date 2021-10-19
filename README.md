@@ -266,31 +266,19 @@ Per exemple, 142 Km/h: 142000.</li></ul> |
 
 | _Tipus_ | _Codi_ | _Descripció_ | _Campsvalidats_ | _Validació_ |
 | --- | --- | --- | --- | --- |
-| _Capçalera_ |
-| CRÍTIC | CAP002 | Nombre dedenúncieserroni | NUM\_BUTLLETES | NombredeBUTLLETAdelaremesano coincideix amb elNUM\_BUTLLETES. |
-| _Validacionsdeformat_ |
-| CRÍTIC | INT001 | Dada numèricaerrònia | IMPORT\_NOMINALIMPORT\_PAGATIMPORT\_DESCOMPTE | Elvalornoes potconvertiranúmero,aplicantelpatrócorresponent. |
-| NO | INT002 | Dadanumèrica | VIA\_NUMERO | Elvalornoespotconvertiranúmero, |
-
-| _Tipus_ | _Codi_ | _Descripció_ | _Campsvalidats_ | _Validació_ |
-| --- | --- | --- | --- | --- |
-| CRÍTICA |
- | errònia |
- | aplicantelpatrócorresponent. |
-| CRÍTIC | DAT001 | Data errònia | DATA\_DENUNCIA | FormatincorrecteAAAAMMDD. |
-| NO CRÍTICA | DAT002 | Data errònia | DATA\_LIMIT\_DESCOMPTE | FormatincorrecteAAAAMMDD. |
+| **Capçalera** | **Capçalera** | **Capçalera** | **Capçalera** | **Capçalera** |
+| CRÍTIC | CAP002 | Nombre de denúncies erroni | NUM\_BUTLLETES | Nombre de BUTLLETA de la remesa no coincideix amb el NUM_BUTLLETES. |
+| **Validacions de format** | **Validacions de format** | **Validacions de format** | **Validacions de format** | **Validacions de format** |
+   | CRÍTIC | INT001 | Dada numèricaerrònia | <ul><li>IMPORT_NOMINAL</li><li>IMPORT_PAGAT</li><li>IMPORT_DESCOMPTE</li></ul> | El valor no es pot convertir a número, aplicant el patró corresponent. |
+| NO CRÍTICA | INT002 | Dada numèrica errònia | VIA\_NUMERO | El valor no es pot convertir a número, aplicant el patró corresponent.|
+| CRÍTIC | DAT001 | Data errònia | DATA\_DENUNCIA | Format incorrecte AAAAMMDD.. |
+| NO CRÍTICA | DAT002 | Data errònia | DATA\_LIMIT\_DESCOMPTE | Format incorrecte AAAAMMDD. |
 | CRÍTIC | DAT003 | Data errònia | DATA\_HORA\_ANULLACIO | El valor no es pot convertir a una data segons el format: YYYY-MM-DD-HH:MI:SS&#39;. |
 | CRÍTIC | HOR001 | Hora errònia | HORA\_DENUNCIA | El valor no es pot convertir a una hora segons el format HHMISS. |
-| _Validacionsdecontingut_ |
-| CRÍTIC | BUT002 | Butlleta duplicada | SERVEI\_TERRITNUM\_EXPEDIENT | Aquesta butlleta ja existeix al sistema.
-Una butlleta només és pot enviar una vegada, amb ACCIO:
-- A:Alta.
-- B:Anul·lació.
-
-Només s&#39;admet una butlleta repetida quan es tracta del reenviament de una butlleta crítica. |
-| CRÍTIC | BUT003 | Butlleta fora derang | SERVEI\_TERRITNUM\_EXPEDIENT | La butlleta no correspon al rang assignat a la policia local corresponent. |
-| CRÍTIC | BUT004 | Element obligatori NO informat | ACCIONORMA\_DENUNCIAARTICLE\_DENUNCIASUBARTICLE\_DENUNCIAOPCIO\_DENUNCIANUM\_DENUNCIANTTIPUS\_VIAVIAVIA\_NUMEROIMPORT\_NOMINALIMPORT\_PAGATIMPORT\_DESCOMPTEDATA\_LIMIT\_DESCOMPTEIND\_NOTIFICACIO |
- |
+| **Validacionsdecontingut** | **Validacionsdecontingut** | **Validacionsdecontingut** | **Validacionsdecontingut** | **Validacionsdecontingut** |
+| CRÍTIC | BUT002 | Butlleta duplicada | SERVEI\_TERRITNUM\_EXPEDIENT |Aquesta butlleta ja existeix al sistema (Només s’admet una butlleta repetida quan es tracta del reenviament de una butlleta crítica). Una butlleta només és pot enviar una vegada, amb ACCIO:<ul><li>A: Alta.</li><li>B: Anul·lació.</li></ul>|
+| CRÍTIC | BUT003 | Butlleta fora de rang | SERVEI\_TERRITNUM\_EXPEDIENT | La butlleta no correspon al rang assignat a la policia local corresponent. |
+| CRÍTIC | BUT004 | Element obligatori NO informat | <ul><li>ACCIO</li><li>NORMA_DENUNCIA</li><li>ARTICLE_DENUNCIA</li><li>SUBARTICLE_DENUNCIA</li><li>OPCIO_DENUNCIA</li<li>NUM_DENUNCIANT</li><li>TIPUS_VIA</li><li>VIA</li><li>VIA_NUMERO</li><li>IMPORT_NOMINAL</li><li>IMPORT_PAGAT</li><li>IMPORT_DESCOMPTE</li><li>DATA_LIMIT_DESCOMPTE</li><li>IND_NOTIFICACIO</li></ul>|-|
 | CRÍTIC | BUT004 | Element obligatori NO informat | INDICADOR\_CONDUCTORTIPUS\_DOCUMENTNUMERO\_DOCUMENTNOM\_CONDUCTORCOGNOM1\_CONDUCTORCODI\_PAIS\_CONDUCTORDOMICILI\_CONDUCTORCODI\_MUNICIPI\_CONDUCTOR | Aquests elements només són obligatoris per a denúncies notificades. |
 | CRÍTIC | BUT007 | Codi control butlleta erroni | DIGIT\_CONTROL |
  |
