@@ -31,7 +31,7 @@ Documentació d'integració del servei SCT-PDA del Consorci AOC.
 
 # 1 Introducció <a name="1"></a>
 
-Aquest document detallala missatgeria associada al servei d&#39;enviament de denúncies al Servei Català de Trànsit(enendavantSCT).
+Aquest document detalla la missatgeria associada al servei d&#39;enviament de denúncies al Servei Català de Trànsit(enendavantSCT).
 
 Per a poder realitzar la integració cal conèixer prèviament la següent documentació:
 
@@ -60,12 +60,12 @@ Les dades disponibles a través del servei són les que es presenten a continuac
 
 ## 3.1 Enviament de remesade butlletes(SCT\_REMESA) <a name="3.1"></a>
 
-Enviament de les denúncies al sistema del SCT previa la seva incorporació al&#39;aplicació del Procediment Sancionador del SCT (PSN).
+Enviament de les denúncies al sistema del SCT previ a la seva incorporació a l'aplicació del Procediment Sancionador del SCT (PSN).
 
     
 ### 3.1.1 Petició–dades genèriques <a name="3.1.1"></a>
 
-El fitxer corresponent a la remesas&#39;hadereferenciaralblocdedades//Ficheros/Fichero de les dades genèriques de la sol·licitud.
+El fitxer corresponent a la remesa s’ha de referenciar al bloc de dades //Ficheros/Fichero de les dades genèriques de la sol·licitud.
 
 | _Element_ | _Descripció_ |
 | --- | --- |
@@ -281,18 +281,7 @@ Per exemple, 142 Km/h: 142000.</li></ul> |
 | CRÍTIC | BUT004 | Element obligatori NO informat | <ul><li>ACCIO</li><li>NORMA_DENUNCIA</li><li>ARTICLE_DENUNCIA</li><li>SUBARTICLE_DENUNCIA</li><li>OPCIO_DENUNCIA</li<li>NUM_DENUNCIANT</li><li>TIPUS_VIA</li><li>VIA</li><li>VIA_NUMERO</li><li>IMPORT_NOMINAL</li><li>IMPORT_PAGAT</li><li>IMPORT_DESCOMPTE</li><li>DATA_LIMIT_DESCOMPTE</li><li>IND_NOTIFICACIO</li></ul>|-|
 | CRÍTIC | BUT004 | Element obligatori NO informat | INDICADOR\_CONDUCTORTIPUS\_DOCUMENTNUMERO\_DOCUMENTNOM\_CONDUCTORCOGNOM1\_CONDUCTORCODI\_PAIS\_CONDUCTORDOMICILI\_CONDUCTORCODI\_MUNICIPI\_CONDUCTOR | Aquests elements només són obligatoris per a denúncies notificades. |
 | CRÍTIC | BUT007 | Codi control butlleta erroni | DIGIT\_CONTROL |
- |
-| NO CRÍTICA | BUT011 | Camp massa llarg |
- | Són camps que en l&#39;entorn PDA sónmésgrans queen entornPSN.
-Elements la grandària dels quals és més grana la missatgeria de la |
-
-| _Tipus_ | _Codi_ | _Descripció_ | _Campsvalidats_ | _Validació_ |
-| --- | --- | --- | --- | --- |
-|
- |
- |
- |
- | remesa que als sistemes del SCT. |
+| NO CRÍTICA | BUT011 | Camp massa llarg | | <ul>Són camps que en l’entorn PDA són més grans que en entorn PSN. Elements la grandària dels quals és més gran a la missatgeria de la remesa que als sistemes del SCT. </ul>|
 | NO CRÍTICA | BUT013 | Manca codipostal | CODI\_POSTAL\_CONDUCTOR | El codi postal del conductor no estàinformat. |
 | CRÍTIC | BUT014 | Butlleta arxivada | SERVEI\_TERRITNUM\_EXPEDIENT | S&#39;ha tornat a enviar una butlleta que ja s&#39;havia arxivat perquè s&#39;havia rebutcom a CRÍTICA amb errors CRÍTICS i s&#39;ha exhaurit el termini per reenviar-la. |
 | NO CRÍTICA | BUT015 | Butlleta reenviada | SERVEI\_TERRITNUM\_EXPEDIENT | Les butlletes reenviades generaran una incidència no crítica per forçar que passin pel mòdul de validació de PSN, malgrat que no hi hagi cap altra incidència en la butlleta. |
@@ -312,43 +301,42 @@ Formats de matrícula recomanats pel SCT:
 
 - Turisme/Motocicleta/Camió/Furgoneta/Autobús(on n dígits, L lletres, b espais).
 
-nnnnLLL LLnnnnLL LLnnnnbL LLnnnnnn LbnnnnLL LbnnnnbL Lbnnnnnn
+*nnnnLLL LLnnnnLL LLnnnnbL LLnnnnnn LbnnnnLL LbnnnnbL Lbnnnnnn*
 
 - Remolc(on n dígits i L lletres):
 
-RnnnnLLL
+*RnnnnLLL*
 
 - VehiclesEspecials(onnnúmeros,Llletres, Efixa,bespais):
 
-EnnnnLLL LLnnnnnE LbnnnnnE LLnnnnnnE LbnnnnnnE
+*EnnnnLLL LLnnnnnE LbnnnnnE LLnnnnnnE LbnnnnnnE*
 
 - Turístics(onnnúmeros,Llletres,Tfixa,bespais):
 
-TnnnnLLL nnLLnnnn nnLbnnnn
+*TnnnnLLL nnLLnnnn nnLbnnnn*
 
 - Temporals(on n números, L lletres, T, R, P, S, V fixes, b espais):
 
-LLnnnnTnn LbnnnnTnn LLnnnnRnn LbnnnnRnn PnnnnLLL SnnnnLLL nnnnLLL
+*LLnnnnTnn LbnnnnTnn LLnnnnRnn LbnnnnRnn PnnnnLLL SnnnnLLL nnnnLLL*
 
 - Ciclomotors(onnnúmeros,Llletres,Cfixa):
 
-CnnnnLLL
+*CnnnnLLL*
 
 - Altres Vehicles(o n nnúmeros,L lletres, CD, OI, CC, TA, H, PMM,PGC fixes,b espais):
 
 | CDnnnn | OInnnn | CCnnnn | TAnnnn | HnnnnLLL | PMMnnnnnn |
 | --- | --- | --- | --- | --- | --- |
 | PMMnnnnLL | PMMnnnnbL | PGCnnnnnn | PGCnnnnLL | PGCnnnnbL |
- |
+ 
 
-  
 ### 3.2 Obtenció de rang de butlletes (SCT_BUTLLETES) <a name="3.2"></a>
 
 Les policies locals necessiten disposar de butlletes del SCT per poder interposar denúncies competència del SCT. Actualment disposen de talonaris de butlletes en paper lliurats per el SCT que tenen preimprès el número de butlleta(expedient).
 
 Per aquelles policies que s&#39;acullin al sistema de denúncies via PDA ofereix aquesta modalitat per obtenir rangs de butlletes.
 
-LesdenúnciescompetènciadelSCThand&#39;estaridentificades per:
+Les denúncies competència del SCT han d'estar identificades per:
 
 - SERVEI\_TERRIT:demarcacióterritorial.
 
@@ -373,75 +361,49 @@ Aquesta informació ha de mostrar-se en les butlletes que la policia local notif
 
 | _Element_ | _Descripció_ |
 | --- | --- |
-| /respostaObtencioRangButlletes/SORTIDA/RESULTAT |
-- 0: s&#39;han lliurat les butlletes sol·licitades.
-- 1: s&#39;han lliurat menys butlletes de les sol·licitades.
-- 2: no es disposa de butlletes.En cas que s&#39;obtingui aquest error contacteu amb el SCT.
- |
+   | /respostaObtencioRangButlletes/SORTIDA/RESULTAT | <ul><li>0: s&#39;han lliurat les butlletes sol·licitades.</li><li>1: s&#39;han lliurat menys butlletes de les sol·licitades.</li><li>2: no es disposa de butlletes.En cas que s&#39;obtingui aquest error contacteu amb el SCT.</li></ul>|
 | /respostaObtencioRangButlletes/SORTIDA/NUM\_BUTLLETES\_LLIURADES | Número de butlletes lliurades. |
 | /respostaObtencioRangButlletes/SORTIDA/RANGS/RANG | Bloc de dades corresponent a un rang de butlletes.El sistema del SCT pot lliurar el nombre de butlletes en rangs discontinus. |
 | //RANG/ID\_RANG | Identificador del rang. |
 | //RANG/SERVEI\_TERRIT | Demarcació territorial. |
 | //RANG/TALONARI\_INICIAL | Valor inicial del rang.Número de butlleta inicial. |
 | //RANG/TALONARI\_FINAL | Valor final del rang.Número de butlleta final. |
-| /respostaObtencioRangButlletes/resultat/codiResultat |
-- 0: consulta realitzada correctament.
-- 0502: error realitzant la consulta.
- |
+| /respostaObtencioRangButlletes/resultat/codiResultat | <ul><li>0: consulta realitzada correctament.</li><li>- 0502: error realitzant la consulta.</li></ul>|
 | /respostaObtencioRangButlletes | Descripció del resultat. |
+| /resultat/descripcio | |
 
-| /resultat/descripcio |
- |
-| --- | --- |
-
-  
+   
 ## 3.3 Descàrrega del catàleg de normatives(SCT\_CATALEG) <a name="3.3"></a>
 
-Les policies locals necessiten disposar del catàleg de normatives per poder indicar la norma infringida quan interposenuna denúncia competència del SCT.
+Les policies locals necessiten disposar del catàleg de normatives per poder indicar la norma infringida quan interposen una denúncia competència del SCT.
+   
+Actualment disposen d'un catàleg d'infraccions imprès en format de mini llibre, quan realitzen una denúncia escriuen manualment a la butlleta les dades identificatives de la opció normativa infringida.
+   
+Per aquelles policies que s'acullin al sistema de denúncies via PDA, s'ofereix una modalitat per obtenir el catàleg de normatives en format digital.
 
-Actualmentdisposend&#39;uncatàlegd&#39;infraccionsimprèsenformatdeminillibre,quanrealitzenunadenúnciaescriuenmanualmentalabutlletalesdadesidentificativesdelaopciónormativainfringida.
-
-Per aquelles policies que s&#39;acullin al sistema de denúncies via PDA, s&#39;ofereix una modalitat per obtenir el catàleg de normatives en format digital.
-
-    
+   
 ### 3.3.1 Petició–dades específiques <a name="3.3.1"></a>
 
 La modalitat no requereix cap tipus de dades específiques a l’hora de realitzar la petició.
 
-    
+   
 ### 3.3.2 Resposta –dades específiques <a name="3.3.2"></a>
 
 | _Element_ | _Descripció_ |
 | --- | --- |
-| /respostaConsultaCatalegNormatives/NORMATIVES/NORMATIVA | Bloc dedadescorresponentalblocdedadesdecadascuna deles normatives. |
-| //NORMATIVA/CODI\_NL | Codidenormallegal. |
-| //NORMATIVA/ARTICLE | Articleinfringit. |
-| //NORMATIVA/SUBARTICLE | Subarticleinfringit. |
+| /respostaConsultaCatalegNormatives/NORMATIVES/NORMATIVA | Bloc de dades corresponent al bloc de dades de cadascuna de les normatives. |
+| //NORMATIVA/CODI\_NL | Codi de normal legal. |
+| //NORMATIVA/ARTICLE | Article infringit. |
+| //NORMATIVA/SUBARTICLE | Subarticle infringit. |
 | //NORMATIVA/OPCIO | Opció. |
-| //NORMATIVA/GRAVETAT |
-- G:Greu
-- L:Lleu
-- M:Moltgreu
-- V:62.2LSV
-- W:67.4LSV
- |
-| //NORMATIVA/DESC\_BREU | Descripcióbreudelconceptedelainfracció. |
-| //NORMATIVA/FET\_DENUNCIAT | Conceptedelainfracció(català). |
-| //NORMATIVA/HECHO\_DENUNCIADO | Conceptedelainfracció(castellà). |
-| //NORMATIVA/FET\_DENUNCIAT\_ARANES | Conceptedelainfracció(aranès). |
-| //NORMATIVA/IMPORT\_NOMINAL | Quantia de la multa sense descompte amb dos decimals. 10 primeres posicions són la part sencera(amb zeros a l&#39;esquerra) i les dues darreres la part decimal.
-Perexemple,100:000000010000. |
-
-| _Element_ | _Descripció_ |
-| --- | --- |
-|
- |
- |
-| //NORMATIVA/PUNTS | Pèrduadepuntsquecomportalainfracció. |
-| /respostaConsultaCatalegNormatives/resultat/codiResultat |
-- 0:consultarealitzadacorrectament.
-- 0502:errorrealitzantlaconsulta.
- |
+| //NORMATIVA/GRAVETAT | <ul><li>G:Greu</li><li>L:Lleu</li><li>M:Moltgreu</li><li>V:62.2LSV</li><li>W:67.4LSV</li></ul> |
+| //NORMATIVA/DESC\_BREU | Descripció breu del concepte de la infracció. |
+| //NORMATIVA/FET\_DENUNCIAT | Concepte de la infracció(català). |
+| //NORMATIVA/HECHO\_DENUNCIADO | Concepte de la infracció(castellà). |
+| //NORMATIVA/FET\_DENUNCIAT\_ARANES | Concepte de la infracció(aranès). |
+| //NORMATIVA/IMPORT\_NOMINAL | Quantia de la multa sense descompte amb dos decimals. 10 primeres posicions són la part sencera(amb zeros a l&#39;esquerra) i les dues darreres la part decimal.<ul>Per exemple,100:000000010000.</ul> |
+| //NORMATIVA/PUNTS | Pèrdua de punts que comporta la infracció. |
+| /respostaConsultaCatalegNormatives/resultat/codiResultat | <ul><li>0: consulta realitzada correctament.</li><li>0502: error realitzant la consulta.</li></ul>|
 | /respostaConsultaCatalegNormatives/resultat/descripcio | Descripció del resultat. |
 
 ![image](https://user-images.githubusercontent.com/32306731/137328964-69421ef9-e63d-46a0-9f7c-9c24723aac9e.png)
@@ -457,11 +419,7 @@ Donat un número d’expedient, el dígit de control corresponent es calcula tal
 | _Serveiterritorial_ | _Emissora_ |
 | --- | --- |
 | Barcelona (08) | 8500514 |
-| Girona(17) |
-- Sinúmeroexpediententre1i400008500459
-- Sinúmeroexpediententre40001i 1125008500459
-- Sinúmeroexpedient\&gt;=1125018500472
- |
+   | Girona(17) | <ul><li>Si número expedient entre 1 i 40000 → 8500459</li><li>Si número expedient entre 40001 i 112500 → 8500459</li><li>Si número expedient >= 112501 → 8500472</li></ul>|
 | Lleida(25) | 8500484 |
 | Tarragona(43) | 8500540 |
 
