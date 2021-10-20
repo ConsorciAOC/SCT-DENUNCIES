@@ -75,14 +75,14 @@ El fitxer corresponent a la remesa s’ha de referenciar al bloc de dades //Fich
 ### 3.1.2 Remesa <a name="3.1.2"></a>
 
 
-| ![image](https://user-images.githubusercontent.com/32306731/137331712-bc31edd6-6b5b-4372-977b-6230938c4af6.png) | Per limitacions del sistema del SCT el fitxer de remesa no pot superar les 50 butlletes.
+![image](https://user-images.githubusercontent.com/32306731/137331712-bc31edd6-6b5b-4372-977b-6230938c4af6.png) Per limitacions del sistema del SCT el fitxer de remesa no pot superar les 50 butlletes.
 Actualment el sistema del SCT únicament suporta l&#39;enviament de denúncies de tipus genèrica. No hi ha previsió a curt termini per rebre denúncies de velocitat o d&#39;alcoholèmia.
 ElSCT processa les remeses diàriament a les20h.Les remeses enviades posteriorment no es processaran fins al dia següent.
 Terminid&#39;enviament:
 
 - Caducitat de les denúncies: les denúncies no poden ser anteriors a 2 mesos.
 
-- El sistema de SCT treballa amb una finestra de processament de 3 dies laborables. Així,una remesa no pot contenir denúncies que puguin caducar abans de 3 dies des del&#39;enviament de la remesa.
+- El sistema de SCT treballa amb una finestra de processament de 3 dies laborables. Així,una remesa no pot contenir denúncies que puguin caducar abans de 3 dies des del&#39;enviament de la remesa. 
 
 
 ![image](https://user-images.githubusercontent.com/32306731/137331907-08511998-e779-482b-89d0-2cba19c4e1ed.png)
@@ -187,7 +187,7 @@ Permés detalls sobre el mecanisme d&#39; obtenció del rang de butlletes vegeu 
   
 #### 3.1.2.2 Denúncia velocitat
 
-| ![image](https://user-images.githubusercontent.com/32306731/137351071-29a3ee46-a4b0-4a79-9251-231123277d7a.png) | S’ha previst aquest bloc de dades pel futur enviament de les denúncies de velocitat. Mentrestant, no s’ha d’informar el bloc de dades DENUNCIA_VELOCITAT (només es suporta TIPUS_DENUNCIA = G). |
+![image](https://user-images.githubusercontent.com/32306731/137351071-29a3ee46-a4b0-4a79-9251-231123277d7a.png) S’ha previst aquest bloc de dades pel futur enviament de les denúncies de velocitat. Mentrestant, no s’ha d’informar el bloc de dades DENUNCIA_VELOCITAT (només es suporta TIPUS_DENUNCIA = G). 
 
 
 | _Element_ | _Descripció_ |
@@ -202,7 +202,7 @@ Per exemple, 142 Km/h: 142000.</li></ul> |
      
 #### 3.1.2.3 Denúncia alcoholèmia
 
-| ![image](https://user-images.githubusercontent.com/32306731/137351209-bc3df005-8413-41d4-8bde-b85436c0a80f.png) | S’ha previst aquest bloc de dades pel futur enviament de les denúncies d’alcoholèmia. Mentrestant, no s’ha d’informar el bloc de dades DENUNCIA_ALCOHOLEMIA (només es suporta TIPUS_DENUNCIA = G). |
+![image](https://user-images.githubusercontent.com/32306731/137351209-bc3df005-8413-41d4-8bde-b85436c0a80f.png) S’ha previst aquest bloc de dades pel futur enviament de les denúncies d’alcoholèmia. Mentrestant, no s’ha d’informar el bloc de dades DENUNCIA_ALCOHOLEMIA (només es suporta TIPUS_DENUNCIA = G). |
 
 
 | _Element_ | _Descripció_ |
@@ -220,7 +220,7 @@ Per exemple, 142 Km/h: 142000.</li></ul> |
     
 #### 3.1.2.4 Targeta
 
-| ![image](https://user-images.githubusercontent.com/32306731/137351411-4736303c-be46-4f3e-aefc-d9b666ad8e56.png) | S&#39;ha previs taquest bloc de dades per un possible ús futur del pagament amb targeta. Mentrestant, el valor de l&#39;element IND\_TARGETA serà sempre N. |
+![image](https://user-images.githubusercontent.com/32306731/137351411-4736303c-be46-4f3e-aefc-d9b666ad8e56.png) S&#39;ha previs taquest bloc de dades per un possible ús futur del pagament amb targeta. Mentrestant, el valor de l&#39;element IND\_TARGETA serà sempre N. |
 
 
 | _Element_ | _Descripció_ |
