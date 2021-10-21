@@ -544,35 +544,35 @@ format i com es genera el caràcter de control que s’ha d’incloure.
 
 ## 4.5 Text dels avisos legals a incloure en les butlletes <a name="4.5"></a>
 
-INFORMACIÓ I ADVERTÈNCIES LEGALS
+**INFORMACIÓ I ADVERTÈNCIES LEGALS**
 
 Sigles  de  les  normes:  R,  Reglament  general  de  circulació  (RD  1428/03);  V,  Reglament  general  de vehicles (RD 2822/98); G, Reglament general de conductors (RD 818/09); A, Llei sobre responsabilitat civil  i  assegurança  en  la  circulació  de  vehicles  de  motor  (Rdleg.  8/04);  TRLSV,  text  refós  de  la  Llei sobre  trànsit,  circulació  de  vehicles  de  motor  i  seguretat  viària  (RDL  6/2015);  E,  Reglament d'autoescoles (RD 1295/03).
 
-NOTIFICACIÓ DE LA DENÚNCIA I INCOACIÓ DEL PROCEDIMENT
+**NOTIFICACIÓ DE LA DENÚNCIA I INCOACIÓ DEL PROCEDIMENT**
 
 Us  notifiquem  aquesta  denúncia  i  us  fem  saber  que  queda  incoat  el  corresponent  procediment sancionador (article89 TRLSV)
 
-PROCEDIMENT ABREUJAT I PROCEDIMENT ORDINARI
+**PROCEDIMENT ABREUJAT I PROCEDIMENT ORDINARI**
 
 Si us voleu acollir a la tramitació pel procediment abreujat, disposeu d'un termini de 20 dies naturals des  de  la  notificació  per  realitzar  el  pagament  de  l'import  de  la  sanció,  amb  un  descompte  del  50%. Aquest  procediment  implica:  la  renúncia  a  formular  al·legacions  (es  tindran  per  no  presentades),  la finalització  del  procediment  sense  dictar  resolució  expressa,  l'esgotament  de  la  via  administrativa (només es podràrecórrer  davant  del  Jutjat  )  i  la  fermesa  de  la  sanció  des  del  moment  del  pagament.  Si  la  sanció  és greu  i  no  comporta  detracció  de  punts,  no  s'anotarà  com  antecedent  en  el  Registre  de  conductors  i infractors.  En  cas  de  no  efectuar  el  pagament  amb  descompte  del  50%,  continua  la  tramitació  pelprocediment ordinari, que us permet formular al·legacions i proposar o aportar proves en el termini de 20 dies naturals des de lanotificació.  L'escrit  d'al·legacions  s'ha  d'adreçar  al  Servei  Territorial  de  Trànsit  corresponent  i  es  pot presentar en qualsevol dels registres legalment establerts (*).  Si no formuleu al·legacions ni aboneu l'import  de  la  sanció,  aquesta  denúncia  tindrà  efecte  d'acte  resolutori  del  procediment  sancionador. Contra  la  sanció  es  podrà  interposar  recurs  de  reposició,  amb  caràcterpotestatiu,  en  el  termini  d'un mes.  La  sanciópodrà  executar-se  transcorreguts  30  dies  naturals  des  de  la  notificació  d'aquesta denúncia.
 
-ÒRGANS QUE INTERVENEN EN EL PROCEDIMENT
+**ÒRGANS QUE INTERVENEN EN EL PROCEDIMENT**
 
 Òrgan  instructor:  el/la  cap  del  Servei  Territorial  de  Trànsit  de  Barcelona.  Autoritat  sancionadora:  la persona  titular  de  la  Direcció  del  Servei  Català  de  Trànsit  (article  11.1  de  la  Llei  14/1997,  de  24  de desembre, de creació del Servei Català de Trànsit, D.O.G.C. núm. 5537, de 31-12-2009)
 
-RESOLUCIÓ DE L'EXPEDIENT SANCIONADOR
+**RESOLUCIÓ DE L'EXPEDIENT SANCIONADOR**
 
 El  termini  màxim  per  resoldre  i  notificar  la  resolució  de  l'expedient  sancionador  iniciat  mitjançant aquesta denúncia és d'un any des de l'inici del procediment (article 112.3 TRLSV)
 
-PÈRDUA DE PUNTS EN ELS PERMISOS I LLICÈNCIES DE CONDUCCIÓ
+**PÈRDUA DE PUNTS EN ELS PERMISOS I LLICÈNCIES DE CONDUCCIÓ**
 
 Els punts indicats a aquesta butlleta es detrauran quan la sanció sigui ferma. Podeu consultar el saldodepunts en [www.dgt.es](http://www.dgt.es/)
 
-NOTIFICACIONS ELECTRÒNIQUES
+**NOTIFICACIONS ELECTRÒNIQUES**
 
 La  TRLSV  ha  establert  que  a  partir  del  24-11-2010  es  puguin  efectuar  les  notificacionsper  mitjans electrònics. Si us voleu acollir a aquesta possibilitat, consulteu el web[http://transit.gencat.cat](http://transit.gencat.cat/)
 
-FORMA DE PAGAMENT
+**FORMA DE PAGAMENT**
 
 Podeu utilitzar una de les següents modalitats per fer efectiu el pagament de la multa:
 
@@ -586,6 +586,6 @@ Podeu utilitzar una de les següents modalitats per fer efectiu el pagament de l
 
 (*) Els subjectes **obligats a relacionar-se electrònicament** amb l’administració (art 14.2i 14.3de la Llei 39/2015 i art 3 de l’Ordre PDA/20/2019) han de presentar les al·legacions per internet accedint al web[http://transit.gencat.cat.](http://transit.gencat.cat/)
 
-PROTECCIÓ DE DADES.
+**PROTECCIÓ DE DADES.**
 
 Tractament SCT: Expedients sancionadors per infraccions de trànsit. Responsable: la persona titular de  la  Direcció  de  l’SCT  (Diputació,  355,  08009  Barcelona).  Contacte  Delegat  de  protecció  de dades:Diputació,  355,  08009  Barcelonao dpd.interior@gencat.catFinalitat:  gestionar  les  dades relatives  als  expedients  sancionadors  que  s ́incoïn  per  infraccions  en  aquesta  matèria.  Informació addicional accediu al web de l'SCT.Tractament  Ajuntament  de  ...............:  amb  la  finalitat  de  generar  aquest  document,  les  dades personals seran tractades per l’Ajuntament de  xxxxxxxxxxxxxxxxxxxxxx   Podeu consultar informació addicional sobre aquest tractament i protecció de dades en www.xxxxxxxxxxxxxxxxxxxx
