@@ -571,7 +571,7 @@ Els punts indicats a aquesta butlleta es detrauran quan la sanció sigui ferma. 
 
 **NOTIFICACIONS ELECTRÒNIQUES**
 
-La  TRLSV  ha  establert  que  a  partir  del  24-11-2010  es  puguin  efectuar  les  notificacionsper  mitjans electrònics. Si us voleu acollir a aquesta possibilitat, consulteu el web[http://transit.gencat.cat](http://transit.gencat.cat/)
+La  TRLSV  ha  establert  que  a  partir  del  24-11-2010  es  puguin  efectuar  les  notificacionsper  mitjans electrònics. Si us voleu acollir a aquesta possibilitat, consulteu el web [http://transit.gencat.cat](http://transit.gencat.cat/)
 
 **FORMA DE PAGAMENT**
 
@@ -583,9 +583,9 @@ Podeu utilitzar una de les següents modalitats per fer efectiu el pagament de l
 
 - Pagar-la  amb targeta, directament a qualsevol de  les dependències territorials del  Servei Català de Trànsit.
 
-- Pagar-la per internet mitjançant el portal[http://tramits.gencat.cat](http://tramits.gencat.cat/)
+- Pagar-la per internet mitjançant el portal [http://tramits.gencat.cat](http://tramits.gencat.cat/)
 
-(*) Els subjectes **obligats a relacionar-se electrònicament** amb l’administració (art 14.2i 14.3de la Llei 39/2015 i art 3 de l’Ordre PDA/20/2019) han de presentar les al·legacions per internet accedint al web[http://transit.gencat.cat.](http://transit.gencat.cat/)
+(*) Els subjectes **obligats a relacionar-se electrònicament** amb l’administració (art 14.2i 14.3de la Llei 39/2015 i art 3 de l’Ordre PDA/20/2019) han de presentar les al·legacions per internet accedint al web [http://transit.gencat.cat.](http://transit.gencat.cat/)
 
 **PROTECCIÓ DE DADES.**
 
