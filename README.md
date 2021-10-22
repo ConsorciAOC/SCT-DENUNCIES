@@ -104,12 +104,11 @@ Terminid&#39;enviament:
 | _Element_ | _Descripció_ |
 | --- | --- |
 | //BUTLLETA/ACCIO | A:alta/B:anul·lació.Encas d&#39;anul·lació de butlletac al informar totes les dades de la butlleta, el motiu(MOTIU\_ANULLACIO) i la data d&#39;anul·lació(DATA\_HORA\_ANULLACIO). |
-| //BUTLLETA/ID\_BUTLLETA | Identificador de la butlleta en el sistema origen o identificador dins de la remesa.
-Dins del sistema del SCTl&#39;identificador de la denúncia són elselements SERVEI\_TERRITi NUM\_EXPEDIENT. |
+   | //BUTLLETA/ID\_BUTLLETA | <ul><li>Identificador de la butlleta en el sistema origen o identificador dins de la remesa. </li><li>Dins del sistema del SCT l’identificador de la denúncia són els elements SERVEI_TERRIT i NUM_EXPEDIENT.</li></ul>|
 | //BUTLLETA/SERVEI\_TERRIT | Demarcació territorial: 08,17,25,43. |
 | //BUTLLETA/NUM\_EXPEDIENT | Número d&#39;expedient.Identificador de la denúncia en el sistemade lSCT.És un número de butlleta del rang de números de butlleta que s&#39;ha lliurat a l&#39;Ajuntament.
 Permés detalls sobre el mecanisme d&#39; obtenció del rang de butlletes vegeu l&#39;apartat |
-| //BUTLLETA/DIGIT\_CONTROL | Dígit de control de la butlleta. Vegeu l&#39;annex [_Càlcul del_](#_bookmark19)[_dígit __de control__ d&#39;un número__d&#39;expedient_.](#_bookmark19) |
+| //BUTLLETA/DIGIT\_CONTROL | Dígit de control de la butlleta. Vegeu l&#39;annex Càlcul del dígit de control d&#39;un número d&#39;expedient. |
 | //BUTLLETA/TIPUS\_DENUNCIA | Tipus de denúncia: <ul><li>G: genèrica.</li><li>A: alcoholèmia (aquest cas requereix informar bloc de dades DENUNCIA_ALCOHOLEMIA).</li><li>V: velocitat (aquest cas requereix informar bloc de dades DENUNCIA_VELOCITAT).</li></ul> |
 | //BUTLLETA/DATA\_DENUNCIA | Data de la denúncia(formatAAAAMMDD). |
 | //BUTLLETA/HORA\_DENUNCIA | Hora de lad enúncia(format HHMISS). |
