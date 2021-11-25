@@ -7,9 +7,9 @@ Documentació d'integració del servei SCT-PDA del Consorci AOC.
 
 **Índex**
 
-1. [1 Introducció](#1)
-2. [2 Transmissions de dades disponibles](#2)
-3. [3 Missatgeria dels serveis](#3)
+1. [Introducció](#1)
+2. [Transmissions de dades disponibles](#2)
+3. [Missatgeria dels serveis](#3)
    1. [3.1 Enviament de remesa de butlletes (SCT_REMESA)](#3.1)
       1. [3.1.1 Petició–dades genèriques](#3.1.1)
       2. [3.1.2 Remesa](#3.1.2)
