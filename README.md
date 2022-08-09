@@ -33,9 +33,9 @@ Documentació d'integració del servei SCT-PDA del Consorci AOC.
 
 Aquest document detalla la missatgeria associada al servei d&#39;enviament de denúncies al Servei Català de Trànsit(enendavantSCT).
 
-Per a poder realitzar la integració cal conèixer prèviament la següent documentació:
+- [Document de Missatgeria Genèrica de la PCI del Consorci AOC.][PCI]
 
-- Document de Missatgeria Genèrica de la PCI del Consorci AOC.
+[PCI]:https://github.com/ConsorciAOC/PCI
 
 
 # 2 Transmissions de dades disponibles <a name="2"></a>
@@ -186,7 +186,7 @@ Permés detalls sobre el mecanisme d&#39; obtenció del rang de butlletes vegeu 
   
 #### 3.1.2.2 Denúncia velocitat
 
-![image](https://user-images.githubusercontent.com/32306731/137351071-29a3ee46-a4b0-4a79-9251-231123277d7a.png) S’ha previst aquest bloc de dades pel futur enviament de les denúncies de velocitat. Mentrestant, no s’ha d’informar el bloc de dades DENUNCIA_VELOCITAT (només es suporta TIPUS_DENUNCIA = G). 
+![image](https://user-images.githubusercontent.com/32306731/137351071-29a3ee46-a4b0-4a79-9251-231123277d7a.png) S’ha previst aquest bloc de dades pel futur enviament de les denúncies de velocitat. Mentrestant, no s’ha d’informar el bloc de dades DENUNCIA_VELOCITAT (només es suporta TIPUS_DENUNCIA = G).
 
 
 | _Element_ | _Descripció_ |
@@ -201,7 +201,7 @@ Per exemple, 142 Km/h: 142000.</li></ul> |
      
 #### 3.1.2.3 Denúncia alcoholèmia
 
-![image](https://user-images.githubusercontent.com/32306731/137351209-bc3df005-8413-41d4-8bde-b85436c0a80f.png) S’ha previst aquest bloc de dades pel futur enviament de les denúncies d’alcoholèmia. Mentrestant, no s’ha d’informar el bloc de dades DENUNCIA_ALCOHOLEMIA (només es suporta TIPUS_DENUNCIA = G). |
+![image](https://user-images.githubusercontent.com/32306731/137351209-bc3df005-8413-41d4-8bde-b85436c0a80f.png) S’ha previst aquest bloc de dades pel futur enviament de les denúncies d’alcoholèmia. Mentrestant, no s’ha d’informar el bloc de dades DENUNCIA_ALCOHOLEMIA (només es suporta TIPUS_DENUNCIA = G).
 
 
 | _Element_ | _Descripció_ |
@@ -219,7 +219,7 @@ Per exemple, 142 Km/h: 142000.</li></ul> |
     
 #### 3.1.2.4 Targeta
 
-![image](https://user-images.githubusercontent.com/32306731/137351411-4736303c-be46-4f3e-aefc-d9b666ad8e56.png) S&#39;ha previs taquest bloc de dades per un possible ús futur del pagament amb targeta. Mentrestant, el valor de l&#39;element IND\_TARGETA serà sempre N. |
+![image](https://user-images.githubusercontent.com/32306731/137351411-4736303c-be46-4f3e-aefc-d9b666ad8e56.png) S&#39;ha previs taquest bloc de dades per un possible ús futur del pagament amb targeta. Mentrestant, el valor de l&#39;element IND\_TARGETA serà sempre N. 
 
 
 | _Element_ | _Descripció_ |
@@ -367,7 +367,7 @@ Aquesta informació ha de mostrar-se en les butlletes que la policia local notif
 | //RANG/SERVEI\_TERRIT | Demarcació territorial. |
 | //RANG/TALONARI\_INICIAL | Valor inicial del rang.Número de butlleta inicial. |
 | //RANG/TALONARI\_FINAL | Valor final del rang.Número de butlleta final. |
-| /respostaObtencioRangButlletes/resultat/codiResultat | <ul><li>0: consulta realitzada correctament.</li><li>- 0502: error realitzant la consulta.</li></ul>|
+| /respostaObtencioRangButlletes/resultat/codiResultat | <ul><li>0: consulta realitzada correctament.</li><li> 0502: error realitzant la consulta.</li></ul>|
 | /respostaObtencioRangButlletes | Descripció del resultat. |
 | /resultat/descripcio | |
 
