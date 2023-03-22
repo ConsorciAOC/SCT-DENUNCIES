@@ -1,4 +1,4 @@
-# SCT-PDA
+# SCT-DENUNCIES
 Documentació d'integració del servei SCT-PDA del Consorci AOC.
 
 
