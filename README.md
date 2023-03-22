@@ -1,5 +1,5 @@
 # SCT-DENUNCIES
-Documentació d'integració del servei SCT-PDA del Consorci AOC.
+Documentació d'integració del servei SCT-DENUNCIES del Consorci AOC.
 
 
 # **Via Oberta - SCT Denúncies**
