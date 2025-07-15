@@ -350,7 +350,7 @@ Aquesta informació ha de mostrar-se en les butlletes que la policia local notif
 
 | _Element_ | _Descripció_ |
 | --- | --- |
-| /resposta Obtencio Rang Butlletes/NUM_BUTLLETES_SOLICITADES | Número de butlletes sol·licitades(màxim9999). |
+| /peticio Obtencio Rang Butlletes/NUM_BUTLLETES_SOLICITADES | Número de butlletes sol·licitades(màxim9999). |
 
     
 ### 3.2.2 Resposta –dades específiques <a name="3.2.2"></a>
